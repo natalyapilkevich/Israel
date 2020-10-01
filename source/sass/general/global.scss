@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

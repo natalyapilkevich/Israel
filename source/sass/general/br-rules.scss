@@ -1,0 +1,30 @@
+.br-tablet,
+.br-mobile {
+  display: none;
+}
+
+.br-desktop {
+  display: inline;
+}
+
+@media (max-width: $tablet-width-only) {
+  .br-mobile,
+  .br-desktop {
+    display: none;
+  }
+
+  .br-tablet {
+    display: inline;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .br-desktop,
+  .br-tablet {
+    display: none;
+  }
+
+  .br-mobile {
+    display: inline;
+  }
+}
