@@ -48,8 +48,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans", "Arial", sans-serif;
-  background-color: mediumaquamarine; }
+  font-family: "Fira Sans", "Arial", sans-serif; }
 
 img {
   max-width: 100%; }
@@ -90,3 +89,152 @@ a {
     display: none; }
   .br-mobile {
     display: inline; } }
+
+.header {
+  position: relative;
+  z-index: 2;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 31px 115px 0 110px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.header__link {
+  display: block;
+  margin-right: 10px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #484848; }
+  .header__link:hover, .header__link:focus {
+    opacity: 0.8;
+    cursor: pointer; }
+  .header__link:active {
+    opacity: 0.5; }
+
+.header__link:last-child {
+  margin-right: 0; }
+
+.header__link--logo {
+  padding-right: 22px; }
+
+.header__link--small-caps {
+  font-variant: small-caps;
+  border-bottom: 1px dashed #484848; }
+
+@media (max-width: 767px) {
+  .header {
+    padding: 20px 9px 0 16px; }
+  .header ul {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .header__link {
+    display: block;
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 17px; }
+  .header__link--logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0; }
+  .header__link--logo img {
+    width: 120px;
+    height: 42px; } }
+
+.topic {
+  position: relative;
+  width: 100%;
+  margin: -83px auto 0;
+  padding: 540px 130px 308px 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../img/main_girl-desktop@1x.png") center no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .topic {
+      background: url("../img/main_girl-desktop@2x.png") center no-repeat;
+      background-size: cover; } }
+
+.topic p {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  color: #FFFFFF; }
+
+.topic a:hover, .topic a:focus {
+  opacity: 0.8;
+  cursor: pointer; }
+
+.topic a:active {
+  opacity: 0.5; }
+
+.topic a::after {
+  content: "";
+  position: absolute;
+  bottom: 146px;
+  left: 50%;
+  -webkit-transform: translateX(-49%);
+          transform: translateX(-49%);
+  width: 76px;
+  height: 132px;
+  background-image: url("../img/icon_scroll_prompt@1x.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .topic a::after {
+      background: url("../img/icon_scroll_prompt@2x.png") center no-repeat;
+      background-size: cover; } }
+
+@media (max-width: 767px) {
+  .topic {
+    margin: -39px auto 0;
+    padding: 303px 5px 254px;
+    background: url("../img/main_girl-mobile@1x.png") center no-repeat;
+    background-size: cover; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .topic {
+      background: url("../img/main_girl-mobile@2x.png") center no-repeat;
+      background-size: cover; } }
+
+@media (max-width: 767px) {
+  .topic p {
+    font-size: 20px;
+    line-height: 24px; }
+  .topic a::after {
+    bottom: 90px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }

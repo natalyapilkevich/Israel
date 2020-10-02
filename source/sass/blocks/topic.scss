@@ -1,0 +1,80 @@
+.topic {
+  position: relative;
+  width: 100%;
+  margin: -83px auto 0;
+  padding: 540px 130px 308px 130px;
+  box-sizing: border-box;
+  background: url("../img/main_girl-desktop@1x.png") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/main_girl-desktop@2x.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.topic p {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  color: #FFFFFF;
+}
+
+.topic a {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+}
+
+.topic a::after {
+  content: "";
+  position: absolute;
+  bottom: 146px;
+  left: 50%;
+  transform: translateX(-49%);
+  width: 76px;
+  height: 132px;
+  background-image: url("../img/icon_scroll_prompt@1x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/icon_scroll_prompt@2x.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .topic {
+    margin: -39px auto 0;
+    padding: 303px 5px 254px;
+    background: url("../img/main_girl-mobile@1x.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/main_girl-mobile@2x.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .topic p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .topic a::after {
+    bottom: 90px;
+    transform: translateX(-50%);
+  }
+}
