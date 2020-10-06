@@ -1,0 +1,117 @@
+.about-program {
+  position: relative;
+  width: 100%;
+  margin: -11px auto 0;
+  padding: 0 0 96px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-program h2 {
+  margin: 0 0 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+  @media (min-width: 1750px) {
+    padding-top: 40px;
+  }
+}
+
+.about-program p {
+  width: 690px;
+  margin: 0 auto 48px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #484848;
+}
+
+.about-program__picture-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-program__play-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.about-program__background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 604px;
+  background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-program__picture-wrapper img {
+    width: 320px;
+    height: 224px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .about-program {
+    margin: -5px auto 0;
+  }
+
+  .about-program h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .about-program p {
+    width: 288px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .about-program__play-button {
+    transform: translate(-50%, -41%);
+  }
+
+  .about-program__play-button svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-program__background {
+    position: absolute;
+    bottom: 37.5%;
+    width: 100%;
+    min-height: 186px;
+    background: url("../img/bg-about_program_map-mobile@1x.png") center bottom no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-about_program_map-mobile@2x.png") center bottom no-repeat;
+      background-size: cover;
+    }
+  }
+}

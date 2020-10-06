@@ -233,8 +233,14 @@
   }
 
   .pop-up p {
+    width: 270px;
+    margin: 0 auto 32px;
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .pop-up__form input {
+    max-width: 370px;
   }
 
   .pop-up__button {
@@ -250,6 +256,7 @@
   .pop-up__agreement label {
     width: 264px;
     margin: 0 auto;
+    text-align: left;
   }
 
   .pop-up--message {

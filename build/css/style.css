@@ -250,6 +250,103 @@ a {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); } }
 
+.about-program {
+  position: relative;
+  width: 100%;
+  margin: -11px auto 0;
+  padding: 0 0 96px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center; }
+
+.about-program h2 {
+  margin: 0 0 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc; }
+  @media (min-width: 1750px) {
+    .about-program h2 {
+      padding-top: 40px; } }
+
+.about-program p {
+  width: 690px;
+  margin: 0 auto 48px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #484848; }
+
+.about-program__picture-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto; }
+
+.about-program__play-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -54%);
+          transform: translate(-50%, -54%);
+  background-color: transparent;
+  border: none; }
+  .about-program__play-button:hover, .about-program__play-button:focus {
+    cursor: pointer; }
+
+.about-program__background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 604px;
+  background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about-program__background {
+      background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
+      background-size: cover; } }
+
+@media (max-width: 900px) {
+  .about-program__picture-wrapper img {
+    width: 320px;
+    height: 224px; } }
+
+@media (max-width: 767px) {
+  .about-program {
+    margin: -5px auto 0; }
+  .about-program h2 {
+    font-size: 32px;
+    line-height: 39px; }
+  .about-program p {
+    width: 288px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left; }
+  .about-program__play-button {
+    -webkit-transform: translate(-50%, -41%);
+            transform: translate(-50%, -41%); }
+  .about-program__play-button svg {
+    width: 80px;
+    height: 80px; }
+  .about-program__background {
+    position: absolute;
+    bottom: 37.5%;
+    width: 100%;
+    min-height: 186px;
+    background: url("../img/bg-about_program_map-mobile@1x.png") center bottom no-repeat;
+    background-size: cover; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .about-program__background {
+      background: url("../img/bg-about_program_map-mobile@2x.png") center bottom no-repeat;
+      background-size: cover; } }
+
 .pop-up {
   position: fixed;
   top: 14.2%;
@@ -513,8 +610,12 @@ a {
     font-size: 24px;
     line-height: 29px; }
   .pop-up p {
+    width: 270px;
+    margin: 0 auto 32px;
     font-size: 14px;
     line-height: 22px; }
+  .pop-up__form input {
+    max-width: 370px; }
   .pop-up__button {
     margin: 0 auto 16px;
     padding: 19px 0 20px; }
@@ -523,6 +624,7 @@ a {
     right: 24px; }
   .pop-up__agreement label {
     width: 264px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: left; }
   .pop-up--message {
     padding: 296px 18px 41px; } }

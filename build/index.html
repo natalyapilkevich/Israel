@@ -25,7 +25,7 @@
               <!-- 1х: 137px; 2x: 274px -->
               <source type="image/webp" srcset="img/header_logo-desktop@1x.webp 1x, img/header_logo-desktop@2x.webp 2x">
               <!-- 1х: 137px; 2x: 274px -->
-              <img src="img/header_logo-desktop@1x.png" srcset="header_logo-desktop@2x.png 2x" alt="Логотип" width="137" height="48">
+              <img src="img/header_logo-desktop@1x.png" srcset="img/header_logo-desktop@2x.png 2x" alt="Логотип" width="137" height="48">
             </picture>
           </a>
         </li>
@@ -42,6 +42,22 @@
     <main>
       <section class="main__about-program about-program" id="about-program">
         <h2>О программе</h2>
+        <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
+        <div class="about-program__picture-wrapper">
+          <picture>
+            <!-- 1х: 320px; 2x: 640px -->
+            <source type="image/webp" media="(max-width: 900px)" srcset="img/about_program_group-mobile@1x.webp 1x, img/about_program_group-mobile@2x.webp 2x">
+            <!-- 1х: 870px; 2x: 1740px -->
+            <source type="image/webp" srcset="img/about_program_group-desktop@1x.webp 1x, img/about_program_group-desktop@2x.webp 2x">
+            <!-- 1х: 870px; 2x: 1740px -->
+            <img src="img/about_program_group-desktop@1x.png" srcset="img/about_program_group-desktop@2x.png 2x" alt="Группа молодых людей" width="870" height="460">
+          </picture>
+          <button class="about-program__play-button" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+            <svg width="96" height="96"><use xlink:href="img/sprite_auto.svg#icon_about_program_play_button"></use></svg>
+          </button>
+        </div>
+        <div class="about-program__background"></div>
       </section>
     </main>
     <footer class="footer">
