@@ -318,10 +318,16 @@ a {
 
 @media (max-width: 767px) {
   .about-program {
-    margin: -5px auto 0; }
+    margin: -5px auto 0;
+    padding: 0 0 40px; }
   .about-program h2 {
     font-size: 32px;
-    line-height: 39px; }
+    line-height: 39px; } }
+  @media (max-width: 767px) and (min-width: 400px) {
+    .about-program h2 {
+      padding-top: 30px; } }
+
+@media (max-width: 767px) {
   .about-program p {
     width: 288px;
     -webkit-box-sizing: border-box;
@@ -346,6 +352,216 @@ a {
     .about-program__background {
       background: url("../img/bg-about_program_map-mobile@2x.png") center bottom no-repeat;
       background-size: cover; } }
+
+.programs {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 100px 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../img/bg-programs_city-desktop@1x.png") right 28% no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .programs {
+      background: url("../img/bg-programs_city-desktop@2x.png") right 28% no-repeat; } }
+
+.programs h2 {
+  margin: 0 0 67px 210px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc; }
+
+.programs__tabs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 946px;
+  margin: 0 auto; }
+
+.programs__nav ul,
+.programs__content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.programs__nav ul {
+  margin-right: 64px; }
+
+.programs__nav-link {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 0 0 4px;
+  padding: 24px 0 26px 73px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #484848;
+  opacity: 0.87; }
+  .programs__nav-link::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 20px;
+    width: 36px;
+    height: 36px; }
+  .programs__nav-link:hover, .programs__nav-link:focus {
+    color: #ffc341;
+    cursor: pointer; }
+    .programs__nav-link:hover::before, .programs__nav-link:focus::before {
+      -webkit-filter: invert(73%) sepia(32%) saturate(1037%) hue-rotate(340deg) brightness(112%) contrast(101%);
+              filter: invert(73%) sepia(32%) saturate(1037%) hue-rotate(340deg) brightness(112%) contrast(101%); }
+
+.programs__nav-link--star::before {
+  background: url("../img/icon_programs_star_black.png") center no-repeat; }
+
+.programs__nav-link--hat::before {
+  background: url("../img/icon_programs_hat_black.png") center no-repeat; }
+
+.programs__nav-link--bag::before {
+  background: url("../img/icon_programs_bag_black.png") center no-repeat; }
+
+.programs__nav-link--hand::before {
+  background: url("../img/icon_programs_hand_black.png") center no-repeat; }
+
+.programs__nav-link--menorah::before {
+  background: url("../img/icon_programs_menorah_black.png") center no-repeat; }
+
+.programs__nav-link--active {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: #ffffff;
+  opacity: 1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%); }
+  .programs__nav-link--active::before {
+    -webkit-filter: invert(100%);
+            filter: invert(100%); }
+  .programs__nav-link--active::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    right: -62px;
+    border: 35px solid transparent;
+    border-left: 28px solid #ffd701; }
+  .programs__nav-link--active:hover, .programs__nav-link--active:focus {
+    color: #ffffff; }
+    .programs__nav-link--active:hover::before, .programs__nav-link--active:focus::before {
+      -webkit-filter: invert(100%);
+              filter: invert(100%); }
+
+.programs__item {
+  display: none; }
+
+.programs__item--active {
+  display: block; }
+
+.programs__content {
+  padding: 16px 28px; }
+
+.programs__content h3 {
+  margin: 0 0 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  color: #1fc0fc; }
+
+.programs__content p {
+  max-width: 550px;
+  margin: 0 0 15px;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  color: #484848;
+  opacity: 0.87; }
+
+@media (max-width: 767px) {
+  .programs {
+    width: 100%;
+    padding: 36px 0 30px;
+    background: url("../img/bg-programs_city-mobile@1x.png") right center no-repeat; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .programs {
+      background: url("../img/bg-programs_city-mobile@2x.png") right center no-repeat; } }
+
+@media (max-width: 767px) {
+  .programs h2 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center; }
+  .programs__tabs-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .programs__nav {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 32px;
+    padding-left: 8px; }
+  .programs__nav ul,
+  .programs__content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .programs__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 -52px; }
+  .programs__nav-link {
+    width: auto;
+    margin: 0 2px 0 0;
+    padding: 15px 13px 14px 52px;
+    border-radius: 60.6704px; }
+    .programs__nav-link::before {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 12px;
+      width: 30px;
+      height: 32px;
+      -webkit-filter: invert(64%) sepia(0%) saturate(2%) hue-rotate(55deg) brightness(94%) contrast(96%);
+              filter: invert(64%) sepia(0%) saturate(2%) hue-rotate(55deg) brightness(94%) contrast(96%); }
+  .programs__nav-link--active::before {
+    -webkit-filter: grayscale(1) invert(100%);
+            filter: grayscale(1) invert(100%); }
+  .programs__nav-link--active::after {
+    border: none;
+    border-left: none; }
+  .programs__content {
+    padding: 0; }
+  .programs__content h3 {
+    margin: 0 0 17px 16px;
+    font-size: 24px;
+    line-height: 29px; }
+  .programs__content p {
+    width: 100%;
+    padding: 0 16px 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+    line-height: 22px; } }
 
 .pop-up {
   position: fixed;

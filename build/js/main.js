@@ -86,4 +86,29 @@
       localStorage.setItem('tel', userTel.value);
     }
   });
+
+  // табы раздела программы
+
+  var nav = document.querySelector('.programs__nav');
+  var navLinks = nav.querySelectorAll('.programs__nav a');
+  var content = document.querySelector('.programs__content');
+  var descriptions = content.querySelectorAll('.programs__item');
+
+  var addTabsClickHandler = function (link, text) {
+    link.addEventListener('click', function () {
+
+      var activeNavLink = nav.querySelector('.programs__nav-link--active');
+      var activeDescription = content.querySelector('.programs__item--active');
+
+      activeNavLink.classList.remove('programs__nav-link--active');
+      activeDescription.classList.remove('programs__item--active');
+
+      link.classList.add('programs__nav-link--active');
+      text.classList.add('programs__item--active');
+    });
+  };
+  for (var i = 0; i < navLinks.length; i++) {
+    addTabsClickHandler(navLinks[i], descriptions[i]);
+  }
+
 })();
