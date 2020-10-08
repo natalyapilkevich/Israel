@@ -1,0 +1,217 @@
+.how-go {
+  width: 100%;
+  margin: -36px auto 0;
+  padding: 0 0 235px;
+  box-sizing: border-box;
+  background: url("../img/bg-how_to_go_watercolor-desktop@1x.png") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-how_to_go_watercolor-desktop@2x.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.how-go__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% 75.5% no-repeat,
+    url("../img/bg-how_to_go_stamp-desktop@1x.png") right 57% no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% 75.5% no-repeat,
+      url("../img/bg-how_to_go_stamp-desktop@2x.png") right 57% no-repeat;
+  }
+}
+
+.how-go__main {
+  max-width: 38.36%;
+  margin: 0 10.45% 0 auto;
+  padding: 232px 0 82px;
+}
+
+.how-go h2 {
+  margin: 0 0 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+}
+
+.how-go__text {
+  max-width: 480px;
+  margin: 0 0 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  color: #484848;
+  opacity: 0.87;
+}
+
+.how-go__text--important {
+  margin: 0 0 25px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 29px;
+  opacity: 1;
+}
+
+.how-go__text--note {
+  position: relative;
+  max-width: 520px;
+  padding-left: 12px;
+  line-height: 21px;
+  color: #484848;
+  opacity: 0.5;
+  border-left: 4px solid #ffc341;
+}
+
+.how-go ol {
+  margin: 0 0 49px -2px;
+  padding: 0;
+  list-style: none;
+}
+
+.how-go__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+  margin: 0 0 38px;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #484848;
+  opacity: 0.87;
+}
+
+.how-go__item span:first-child {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 36px;
+  color: #ffc341;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 48%;
+    width: 0;
+    height: 40px;
+    border: 1px dashed #484848;
+    opacity: 0.2;
+  }
+}
+
+.how-go__item:last-child span:first-child {
+  &::after {
+    border: none;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .how-go {
+    margin: 0 auto;
+    padding: 0 0 80px;
+    background: none;
+  }
+
+  .how-go__wrapper {
+    width: 100%;
+    padding: 80px 5% 0;
+    background: url("../img/bg-how_to_go_stamp-mobile@1x.png") right 57% no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-how_to_go_stamp-mobile@2x.png") right 57% no-repeat;
+    }
+  }
+
+  .how-go__main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .how-go h2 {
+    text-align: center;
+  }
+
+  .how-go__text {
+    max-width: 100%;
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .how-go__text--important {
+    margin: 0 0 9px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .how-go__text--note {
+    max-width: 100%;
+    margin: 0 -5px;
+    padding-left: 9px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .how-go ol {
+    margin: 0 0 0 6px;
+  }
+
+  .how-go__item {
+    max-width: 100%;
+    min-height: 66px;
+    margin: 0 0 26px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .how-go__item span:first-child {
+    margin: 0 30px 0 0;
+  }
+
+  .how-go__item:last-child span:first-child {
+    &::after {
+      border: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .how-go h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}

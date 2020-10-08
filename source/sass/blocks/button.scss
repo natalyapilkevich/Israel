@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  margin: 0;
+  padding: 19px 0 20px;
+  box-sizing: border-box;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+  border: none;
+  border-radius: 80px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(109.15deg, #ffc341 -50.3%, #ffd701 63.1%);
+    cursor: pointer;
+  }
+
+  &:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #ffc341 -50.3%, #ffd701 63.1%);
+  }
+}

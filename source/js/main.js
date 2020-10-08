@@ -37,10 +37,10 @@
     evt.preventDefault();
     openPopup(requestCallModal);
 
-    userName.value = localStorage.name;
-    userTel.value = localStorage.tel;
+    popUpName.value = localStorage.name;
+    popUpTel.value = localStorage.tel;
 
-    userName.focus();
+    popUpName.focus();
   });
 
   closeButtons.forEach(function (item) {
@@ -56,17 +56,9 @@
 
   // валидация введенных данных
 
-  var form = document.querySelector('.pop-up__form');
-  var fieldset = form.querySelector('fieldset');
-  var userName = fieldset.querySelector('[name=name]');
-  var userTel = fieldset.querySelector('[name=tel]');
-  var agreement = form.querySelector('[name=agreement]');
-
-  var inputs = fieldset.querySelectorAll('input');
-  var spans = fieldset.querySelectorAll('span');
-
-  form.addEventListener('submit', function (evt) {
-    evt.preventDefault();
+  var checkValidity = function (block) {
+    var inputs = block.querySelectorAll('input');
+    var spans = block.querySelectorAll('span');
 
     for (var i = 0; i < inputs.length; i++) {
       if (inputs[i].validity.valueMissing || inputs[i].validity.patternMismatch) {
@@ -78,12 +70,37 @@
         spans[i].classList.remove('error');
       }
     }
+  };
 
-    if (!userName.validity.valueMissing && !userTel.validity.valueMissing && !userTel.validity.patternMismatch && agreement.checked) {
+  var popUpForm = document.querySelector('.pop-up__form');
+  var popUpfieldset = popUpForm.querySelector('fieldset');
+  var popUpName = popUpfieldset.querySelector('[name=name]');
+  var popUpTel = popUpfieldset.querySelector('[name=tel]');
+  var popUpAgreement = popUpForm.querySelector('[name=agreement]');
+
+  popUpForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+
+    checkValidity(popUpfieldset);
+
+    if (!popUpName.validity.valueMissing && !popUpTel.validity.valueMissing && !popUpTel.validity.patternMismatch && popUpAgreement.checked) {
       closePopup();
       openPopup(messageModal);
-      localStorage.setItem('name', userName.value);
-      localStorage.setItem('tel', userTel.value);
+      localStorage.setItem('name', popUpName.value);
+      localStorage.setItem('tel', popUpTel.value);
+    }
+  });
+
+  var wantGoForm = document.querySelector('.want-go');
+  var wantGoTel = wantGoForm.querySelector('[name=tel]');
+
+  wantGoForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+
+    checkValidity(wantGoForm);
+
+    if (!wantGoTel.validity.valueMissing && !wantGoTel.validity.patternMismatch) {
+      openPopup(messageModal);
     }
   });
 

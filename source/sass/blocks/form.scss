@@ -1,0 +1,55 @@
+.form input,
+.form input::placeholder {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: #484848;
+}
+
+.form input {
+  width: 100%;
+  margin: 0 0 8px;
+  padding: 19px 38px 16px;
+  border: 2px solid #e3e3e3;
+  box-sizing: border-box;
+  border-radius: 80px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid #ffd701;
+    cursor: pointer;
+  }
+}
+
+.no-error {
+  display: none;
+}
+
+.error {
+  display: block;
+  padding-left: 30px;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ff0000;
+  opacity: 0.75;
+}
+
+.form .valid {
+  opacity: 0.5;
+  border: 2px solid #484848;
+}
+
+.form .invalid {
+  border: 2px solid #ff0000;
+}
+
+.form input::placeholder {
+  opacity: 0.5;
+}

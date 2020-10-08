@@ -1,0 +1,101 @@
+.want-go {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("../img/bg-want_to_go_girl_flag-desktop@1x.png") right center no-repeat,
+    url("../img/bg-want_to_go_backpack-desktop@1x.png") left 40% no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-want_to_go_girl_flag-desktop@2x.png") right center no-repeat,
+      url("../img/bg-want_to_go_backpack-desktop@2x.png") left center no-repeat;
+  }
+}
+
+.want-go__wrapper {
+  max-width: 946px;
+  margin: 0 auto;
+  padding: 204px 0 118px;
+}
+
+.want-go h2 {
+  margin: 0 0 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+}
+
+.want-go p {
+  max-width: 400px;
+  margin: 0 0 64px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #484848;
+  opacity: 0.87;
+}
+
+.want-go form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 477px;
+}
+
+.want-go button {
+  position: absolute;
+  right: 0;
+  width: 216px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .want-go {
+    padding: 16px 0 18px;
+    background: url("../img/bg-want_to_go_girl_flag-mobile@1x.png") center bottom no-repeat,
+      url("../img/bg-want_to_go_backpack-mobile@1x.png") left 0% no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-want_to_go_girl_flag-mobile@2x.png") center bottom no-repeat,
+        url("../img/bg-want_to_go_backpack-mobile@2x.png") left 0% no-repeat;
+    }
+  }
+
+  .want-go__wrapper {
+    padding: 34px 16px 290px;
+  }
+
+  .want-go h2 {
+    text-align: center;
+  }
+
+  .want-go p {
+    margin: 0 auto 24px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .want-go form {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .want-go button {
+    position: static;
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .want-go h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}

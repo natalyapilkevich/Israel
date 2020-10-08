@@ -59,9 +59,9 @@
         </div>
         <div class="about-program__background"></div>
       </section>
-      <section class="programs">
-        <h2>программы</h2>
+      <section class="main__programs programs">
         <div class="programs__tabs-wrapper">
+          <h2>программы</h2>
           <div class="programs__nav">
             <ul>
               <li>
@@ -112,13 +112,52 @@
           </div>
         </div>
       </section>
+      <section class="main__want-go want-go">
+        <div class="want-go__wrapper">
+          <h2>хочу поехать!</h2>
+          <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
+            <input id="tel" type="tel" name="tel" placeholder="телефон" required="" pattern="[0-9]{11}">
+            <span class="no-error">Ошибка: неверный формат</span>
+            <label class="visually-hidden" for="tel">Номер телефона</label>
+            <button class="button" type="submit">перезвоните мне</button>
+          </form>
+        </div>
+      </section>
+      <section class="main__how-go how-go">
+        <div class="how-go__wrapper">
+          <div class="how-go__main">
+            <h2>Как поехать</h2>
+            <p class="how-go__text">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
+            <p class="how-go__text how-go__text--important">Чтобы иметь возможность получить грант на обучение<br class="br-desktop"> от 4200 до 8400$, вы должны:</p>
+            <ol>
+              <li class="how-go__item">
+                <span>1</span>
+                <span>Быть в возрасте от 16 до 30 лет</span></li>
+              <li class="how-go__item">
+                <span>2</span>
+                <span>Иметь оконченное среднее образование</span></li>
+              
+              <li class="how-go__item">
+                <span>3</span>
+                <span>Иметь документально подтверждённые еврейские корни<br class="br-desktpop"> и пройти консульскую проверку</span></li>
+              
+              <li class="how-go__item">
+                <span>4</span>
+                <span>За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</span></li>
+              
+            </ol>
+            <p class="how-go__text how-go__text--note">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
     </footer>
   <section class="pop-up pop-up--request">
     <h2>Заказать звонок</h2>
     <p>Оставьте ваши контактные данные,<br class="br-mobile"> мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
-    <form class="pop-up__form" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
+    <form class="pop-up__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
       <fieldset>
         <input id="name" type="text" name="name" placeholder="имя" required="">
         <span class="no-error">Ошибка: неверный формат</span>
@@ -127,7 +166,7 @@
         <span class="no-error">Ошибка: неверный формат</span>
         <label class="visually-hidden" for="tel">Номер телефона</label>
       </fieldset>
-      <button class="pop-up__button" type="submit">перезвоните мне</button>
+      <button class="pop-up__button button" type="submit">перезвоните мне</button>
       <div class="pop-up__agreement">
         <input class="visually-hidden" id="agreement" type="checkbox" name="agreement" required="">
         <label for="agreement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
@@ -136,10 +175,9 @@
     <button class="pop-up__close-button" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
   </section>
   <section class="pop-up pop-up--message">
-    <!--<svg width="66" height="64"><use xlink:href="img/sprite_auto.svg#icon_ok_checkmark"></use></svg>-->
     <h2>Заявка принята</h2>
     <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
-    <button class="pop-up__button" type="button">понятно</button>
+    <button class="pop-up__button button" type="button">понятно</button>
     <button class="pop-up__close-button" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
   </section>
   <script src="js/vendor.js"></script>

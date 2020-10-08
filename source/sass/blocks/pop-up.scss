@@ -43,23 +43,8 @@
 }
 
 .pop-up__button {
-  display: block;
   width: 264px;
   margin: 0 60px 16px;
-  padding: 19px 0 20px;
-  box-sizing: border-box;
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  font-variant: small-caps;
-  color: #ffffff;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-  background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
-  border: none;
-  border-radius: 80px;
 }
 
 .pop-up__close-button {
@@ -96,62 +81,6 @@
   margin: 0 0 17px;
   padding: 0;
   border: none;
-}
-
-.pop-up__form input,
-.pop-up__form input::placeholder {
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  color: #484848;
-}
-
-.pop-up__form input {
-  width: 100%;
-  margin: 0 0 8px;
-  padding: 19px 38px 16px;
-  border: 2px solid #e3e3e3;
-  box-sizing: border-box;
-  border-radius: 80px;
-
-  &:hover,
-  &:focus {
-    outline: none;
-    border: 2px solid #ffd701;
-    cursor: pointer;
-  }
-}
-
-.pop-up__form .valid {
-  opacity: 0.5;
-  border: 2px solid #484848;
-}
-
-.pop-up__form .invalid {
-  border: 2px solid #ff0000;
-}
-
-.no-error {
-  display: none;
-}
-
-.error {
-  display: block;
-  padding-left: 30px;
-  font-family: "Fira Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 19px;
-  color: #ff0000;
-  opacity: 0.75;
-}
-
-.pop-up__form input::placeholder {
-  opacity: 0.5;
 }
 
 .pop-up__agreement label {
