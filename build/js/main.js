@@ -124,8 +124,34 @@
       text.classList.add('programs__item--active');
     });
   };
-  for (var i = 0; i < navLinks.length; i++) {
-    addTabsClickHandler(navLinks[i], descriptions[i]);
+
+  if (window.innerWidth > 767) {
+    for (var i = 0; i < navLinks.length; i++) {
+      addTabsClickHandler(navLinks[i], descriptions[i]);
+    }
   }
+
+
+  // Слайдер мобильной версии раздела программы
+
+  if (window.innerWidth <= 767) {
+    var galleryThumbs = new Swiper('.programs__nav', {
+      spaceBetween: 0,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      initialSlide: 1
+    });
+    var galleryTop = new Swiper('.programs__content', {
+      spaceBetween: 10,
+      initialSlide: 1,
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+
+  }
+
+
 
 })();
