@@ -3,7 +3,7 @@
 (function () {
 
   // открытие и закрытие Pop-Up
-
+  var body = document.querySelector('body');
   var background = document.querySelector('.overlay');
   var requestCallButton = document.querySelector('.header__link--phone');
   var requestCallModal = document.querySelector('.pop-up--request');
@@ -22,6 +22,7 @@
     var openModal = document.querySelector('.pop-up--show');
     openModal.classList.remove('pop-up--show');
     background.classList.remove('overlay--show');
+    body.classList.remove('overflow');
     document.removeEventListener('keydown', onPopupEscPress);
     messageButton.removeEventListener('click', closePopup);
   };
@@ -29,6 +30,7 @@
   var openPopup = function (modal) {
     modal.classList.add('pop-up--show');
     background.classList.add('overlay--show');
+    body.classList.add('overflow');
     document.addEventListener('keydown', onPopupEscPress);
     messageButton.addEventListener('click', closePopup);
   };
@@ -106,16 +108,17 @@
 
   // табы раздела программы
 
-  var nav = document.querySelector('.programs__nav');
-  var navLinks = nav.querySelectorAll('.programs__nav a');
-  var content = document.querySelector('.programs__content');
-  var descriptions = content.querySelectorAll('.programs__item');
+  var programs = document.querySelector('.programs');
+  var navLinks = programs.querySelectorAll('.programs__nav a');
+  var descriptions = programs.querySelectorAll('.programs__item');
+
+  programs.classList.remove('programs--nojs');
 
   var addTabsClickHandler = function (link, text) {
     link.addEventListener('click', function () {
 
-      var activeNavLink = nav.querySelector('.programs__nav-link--active');
-      var activeDescription = content.querySelector('.programs__item--active');
+      var activeNavLink = programs.querySelector('.programs__nav-link--active');
+      var activeDescription = programs.querySelector('.programs__item--active');
 
       activeNavLink.classList.remove('programs__nav-link--active');
       activeDescription.classList.remove('programs__item--active');
@@ -136,7 +139,8 @@
 
   /* eslint-disable */
 
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 767 && !programs.classList.contains('programs--nojs')) {
+    console.log('lf');
     var slideNav = new Swiper('.programs__nav', {
       spaceBetween: 0,
       slidesPerView: 'auto',
@@ -153,5 +157,15 @@
     });
   }
 
+  var life = document.querySelector('.life');
+  life.classList.remove('life--nojs');
+
+  if (window.innerWidth <= 767 && !programs.classList.contains('life--nojs')) {
+    var lifeSwiper = new Swiper('.life__container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  }
   /* eslint-enable */
 })();

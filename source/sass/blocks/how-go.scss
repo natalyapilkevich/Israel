@@ -141,7 +141,7 @@
 @media (max-width: $tablet-width-only) {
   .how-go {
     margin: 0 auto;
-    padding: 0 0 80px;
+    padding: 0 0 160px;
     background: none;
   }
 
@@ -210,6 +210,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .how-go {
+    padding: 0 0 63px;
+  }
+
   .how-go h2 {
     font-size: 32px;
     line-height: 39px;

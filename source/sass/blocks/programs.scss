@@ -32,11 +32,17 @@
 }
 
 .programs__nav {
-  margin-right: 64px;
+  margin: 0 3.8% 0 0;
+}
+
+.programs__nav .swiper-wrapper {
+  display: block;
+  width: 228px;
 }
 
 .programs__nav .swiper-slide {
   width: auto;
+  height: auto;
 }
 
 .programs__nav-link {
@@ -111,7 +117,7 @@
 
   &::after {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     content: "";
     top: 0;
     right: -62px;
@@ -137,8 +143,75 @@
   display: block;
 }
 
+.programs--nojs .programs__item {
+  display: block;
+}
+
+.programs--nojs .programs__nav {
+  width: 100%;
+}
+
+.programs--nojs .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.programs--nojs .programs__nav-link {
+  width: auto;
+
+  &:hover,
+  &:focus {
+    color: #484848;
+    opacity: 0.87;
+    cursor: default;
+
+    &::before {
+      filter: none;
+    }
+  }
+}
+
+.programs--nojs .programs__nav-link--active {
+  position: relative;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: none;
+  font-variant: normal;
+  color: #484848;
+  opacity: 0.87;
+  text-shadow: none;
+  background: none;
+
+  &::before {
+    filter: invert(0);
+  }
+
+  &::after {
+    border: none;
+    border-left: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: #484848;
+    opacity: 0.87;
+    cursor: default;
+
+    &::before {
+      filter: none;
+    }
+  }
+}
+
+
 .programs__content {
+  width: 608px;
+  margin: 0;
   padding: 16px 28px;
+  box-sizing: border-box;
 }
 
 .programs__content h3 {
@@ -153,7 +226,6 @@
 }
 
 .programs__content p {
-  max-width: 550px;
   margin: 0 0 15px;
   padding: 0;
   font-style: normal;
@@ -172,6 +244,7 @@
 
   .programs__tabs-wrapper {
     justify-content: center;
+    margin: 0;
     padding: 0 16px;
   }
 
@@ -181,6 +254,11 @@
 
   .programs h2 {
     text-align: center;
+  }
+
+  .programs--nojs .swiper-wrapper {
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -215,6 +293,7 @@
   }
 
   .programs__nav .swiper-wrapper {
+    display: flex;
     width: auto;
   }
 
@@ -297,9 +376,15 @@
     line-height: 22px;
   }
 
+  .programs--nojs .programs__nav-link {
+    &::before {
+      filter: none;
+    }
+  }
+
   // СЛАЙДЕР
 
-  .swiper-container {
+  .programs .swiper-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;

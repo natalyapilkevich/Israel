@@ -5,11 +5,11 @@
   margin: -83px auto 0;
   padding: 540px 130px 308px 130px;
   box-sizing: border-box;
-  background: url("../img/main_girl-desktop@1x.png") center no-repeat;
+  background: url("../img/main_girl-desktop@1x.png"), radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/main_girl-desktop@2x.png") center no-repeat;
+    background: url("../img/main_girl-desktop@2x.png"), radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
     background-size: cover;
   }
 }
