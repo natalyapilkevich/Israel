@@ -2,12 +2,12 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 100px 0 15px;
+  padding: 48px 0 10px;
   box-sizing: border-box;
-  background: url("../img/bg-programs_city-desktop@1x.png") right 28% no-repeat;
+  background: url("../img/bg-programs_city-desktop@1x.png") right top no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-programs_city-desktop@2x.png") right 28% no-repeat;
+    background: url("../img/bg-programs_city-desktop@2x.png") right top no-repeat;
   }
 }
 

@@ -185,24 +185,28 @@
   for (i = 0; i < faqLinks.length; i++) {
     addTabsClickToggle(faqLinks[i], faqItems[i]);
   }
+
+  // Слайдер отзывов
+
+/* eslint-disable */
+
+  var life = document.querySelector('.life');
+  life.classList.remove('life--nojs');
+
+  var reviewSwiper = new Swiper('.review__container', {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+/* eslint-enable */
 })();
-
-// Слайдер отзывов
-
-var life = document.querySelector('.life');
-life.classList.remove('life--nojs');
-
-var reviewSwiper = new Swiper('.review__container', {
-  spaceBetween: 0,
-  slidesPerView: 1,
-  centeredSlides: true,
-  centeredSlidesBounds: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});

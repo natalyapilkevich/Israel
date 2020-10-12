@@ -1,10 +1,17 @@
 .about-program {
   position: relative;
   width: 100%;
-  margin: -11px auto 0;
-  padding: 0 0 96px;
+  margin: -11px auto 56px;
+  padding: 0 0 92px;
   box-sizing: border-box;
   text-align: center;
+  background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
+    background-size: cover;
+  }
 }
 
 .about-program h2 {
@@ -51,20 +58,6 @@
   &:hover,
   &:focus {
     cursor: pointer;
-  }
-}
-
-.about-program__background {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-height: 604px;
-  background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
-  background-size: cover;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
-    background-size: cover;
   }
 }
 

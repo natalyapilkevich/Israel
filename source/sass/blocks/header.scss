@@ -2,21 +2,15 @@
   position: relative;
   z-index: 2;
   flex: 0 0 auto;
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 31px 115px 0 110px;
-  box-sizing: border-box;
-}
-
-.header ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 31px 115px 32px 110px;
+  box-sizing: border-box;
 }
 
 .header__link {

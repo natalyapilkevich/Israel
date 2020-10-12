@@ -12,33 +12,27 @@
 </head>
 <body>
   <div class="overlay"></div>
+  <div class="head-wrapper">
     <header class="header">
-      <ul>
-        <li>
-          <a class="header__link" href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
-        </li>
-        <li>
-          <a class="header__link header__link--logo">
-            <picture>
-              <!-- 1х: 120px; 2x: 240px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/header_logo-mobile@1x.webp 1x, img/header_logo-mobile@2x.webp 2x">
-              <!-- 1х: 137px; 2x: 274px -->
-              <source type="image/webp" srcset="img/header_logo-desktop@1x.webp 1x, img/header_logo-desktop@2x.webp 2x">
-              <!-- 1х: 137px; 2x: 274px -->
-              <img src="img/header_logo-desktop@1x.png" srcset="img/header_logo-desktop@2x.png 2x" alt="Логотип" width="137" height="48">
-            </picture>
-          </a>
-        </li>
-        <li>
-          <a class="header__link header__link--small-caps header__link--phone" href="#">заказать звонок</a>
-        </li>
-      </ul>
+      <a class="header__link" href="tel:+(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
+      <a class="header__link header__link--logo">
+        <picture>
+          <!-- 1х: 120px; 2x: 240px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/header_logo-mobile@1x.webp 1x, img/header_logo-mobile@2x.webp 2x">
+          <!-- 1х: 137px; 2x: 274px -->
+          <source type="image/webp" srcset="img/header_logo-desktop@1x.webp 1x, img/header_logo-desktop@2x.webp 2x">
+          <!-- 1х: 137px; 2x: 274px -->
+          <img src="img/header_logo-desktop@1x.png" srcset="img/header_logo-desktop@2x.png 2x" alt="Логотип" width="137" height="48">
+        </picture>
+      </a>
+      <a class="header__link header__link--small-caps header__link--phone" href="#">заказать звонок</a>
     </header>
     <section class="topic">
       <h1 class="visually-hidden">Израиль</h1>
       <p>Учёба, путешествие и карьера <br> для еврейской молодёжи</p>
       <a href="#about-program"><span class="visually-hidden">Прокрутка к следующему разделу</span></a>
     </section>
+  </div>
     <main class="main">
       <section class="main__about-program about-program" id="about-program">
         <h2>О программе</h2>
@@ -57,7 +51,6 @@
             <svg width="96" height="96"><use xlink:href="img/sprite_auto.svg#icon_about_program_play_button"></use></svg>
           </button>
         </div>
-        <div class="about-program__background"></div>
       </section>
       <section class="main__programs programs programs--nojs">
         <div class="programs__tabs-wrapper">
@@ -151,6 +144,7 @@
             <p class="how-go__text how-go__text--note">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса», оплатив её полную стоимость.</p>
           </div>
         </div>
+        <div class="how-go__background"></div>
       </section>
       <section class="main__life life life--nojs">
         <h2>жизнь <br class="br-mobile">в израиле</h2>

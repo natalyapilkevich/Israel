@@ -16,6 +16,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
+  padding: 0 0 136px;
   box-sizing: border-box;
   background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat,
     url("../img/bg-faq_bag-desktop@1x.png") left bottom no-repeat;
@@ -29,7 +30,7 @@
 .faq__main {
   max-width: 41%;
   margin: 0 auto 0 8.05%;
-  padding: 0 0 136px;
+  padding: 0;
 }
 
 .faq h2 {

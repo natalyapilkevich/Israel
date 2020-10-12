@@ -833,20 +833,22 @@ button.swiper-pagination-bullet {
   .button:active {
     background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #ffc341 -50.3%, #ffd701 63.1%); }
 
+.head-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../img/main_girl-desktop@1x.png"), radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .head-wrapper {
+      background: url("../img/main_girl-desktop@2x.png"), radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
+      background-size: cover; } }
+
 .header {
   position: relative;
   z-index: 2;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 31px 115px 0 110px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,9 +860,12 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 31px 115px 32px 110px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .header__link {
   display: block;
@@ -918,16 +923,10 @@ button.swiper-pagination-bullet {
   position: relative;
   z-index: 1;
   width: 100%;
-  margin: -83px auto 0;
-  padding: 540px 130px 308px 130px;
+  margin: 0 auto;
+  padding: 423px 130px 310px 130px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: url("../img/main_girl-desktop@1x.png"), radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
-  background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .topic {
-      background: url("../img/main_girl-desktop@2x.png"), radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
-      background-size: cover; } }
+          box-sizing: border-box; }
 
 .topic p {
   margin: 0 auto;
@@ -986,11 +985,17 @@ button.swiper-pagination-bullet {
 .about-program {
   position: relative;
   width: 100%;
-  margin: -11px auto 0;
-  padding: 0 0 96px;
+  margin: -11px auto 56px;
+  padding: 0 0 92px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: center; }
+  text-align: center;
+  background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about-program {
+      background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
+      background-size: cover; } }
 
 .about-program h2 {
   margin: 0 0 24px;
@@ -1031,18 +1036,6 @@ button.swiper-pagination-bullet {
   border: none; }
   .about-program__play-button:hover, .about-program__play-button:focus {
     cursor: pointer; }
-
-.about-program__background {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-height: 604px;
-  background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
-  background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .about-program__background {
-      background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
-      background-size: cover; } }
 
 @media (max-width: 900px) {
   .about-program__picture-wrapper img {
@@ -1090,13 +1083,13 @@ button.swiper-pagination-bullet {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 100px 0 15px;
+  padding: 48px 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-programs_city-desktop@1x.png") right 28% no-repeat; }
+  background: url("../img/bg-programs_city-desktop@1x.png") right top no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .programs {
-      background: url("../img/bg-programs_city-desktop@2x.png") right 28% no-repeat; } }
+      background: url("../img/bg-programs_city-desktop@2x.png") right top no-repeat; } }
 
 .programs__tabs-wrapper {
   display: -webkit-box;
@@ -1428,8 +1421,8 @@ button.swiper-pagination-bullet {
 .want-go {
   width: 100%;
   max-width: 1366px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 160px;
+  padding: 209px 0 123px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/bg-want_to_go_girl_flag-desktop@1x.png") right center no-repeat, url("../img/bg-want_to_go_backpack-desktop@1x.png") left 40% no-repeat; }
@@ -1439,8 +1432,7 @@ button.swiper-pagination-bullet {
 
 .want-go__wrapper {
   max-width: 946px;
-  margin: 0 auto;
-  padding: 204px 0 118px; }
+  margin: 0 auto; }
 
 .want-go h2 {
   margin: 0 0 24px;
@@ -1508,33 +1500,26 @@ button.swiper-pagination-bullet {
     line-height: 39px; } }
 
 .how-go {
+  position: relative;
   width: 100%;
-  margin: -36px auto 0;
-  padding: 0 0 235px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: url("../img/bg-how_to_go_watercolor-desktop@1x.png") center no-repeat;
-  background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .how-go {
-      background: url("../img/bg-how_to_go_watercolor-desktop@2x.png") center no-repeat;
-      background-size: cover; } }
+  margin: 0 auto 117px; }
 
 .how-go__wrapper {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
+  padding: 30px 0 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% 75.5% no-repeat, url("../img/bg-how_to_go_stamp-desktop@1x.png") right 57% no-repeat; }
+  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 47% no-repeat, url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% center no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .how-go__wrapper {
-      background: url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% 75.5% no-repeat, url("../img/bg-how_to_go_stamp-desktop@2x.png") right 57% no-repeat; } }
+      background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 47% no-repeat, url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% center no-repeat; } }
 
 .how-go__main {
   max-width: 38.36%;
   margin: 0 10.45% 0 auto;
-  padding: 232px 0 82px; }
+  padding: 0; }
 
 .how-go h2 {
   margin: 0 0 24px;
@@ -1635,6 +1620,20 @@ button.swiper-pagination-bullet {
 .how-go__item:last-child span:first-child::after {
   border: none; }
 
+.how-go__background {
+  position: absolute;
+  z-index: -1;
+  top: -156px;
+  left: 0;
+  width: 100%;
+  height: 1119px;
+  background: url("../img/bg-how_to_go_watercolor-desktop@1x.png") center no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .how-go__background {
+      background: url("../img/bg-how_to_go_watercolor-desktop@2x.png") center no-repeat;
+      background-size: cover; } }
+
 @media (max-width: 1023px) {
   .how-go {
     margin: 0 auto;
@@ -1692,8 +1691,8 @@ button.swiper-pagination-bullet {
 
 .life {
   width: 100%;
-  margin: -176px auto 104px;
-  padding: 36px 0 41px;
+  margin: 0 auto 96px;
+  padding: 43px 0 49px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/bg-life_watercolor-desktop@1x.png") center no-repeat;
@@ -2058,6 +2057,7 @@ button.swiper-pagination-bullet {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
+  padding: 0 0 136px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat, url("../img/bg-faq_bag-desktop@1x.png") left bottom no-repeat; }
@@ -2068,7 +2068,7 @@ button.swiper-pagination-bullet {
 .faq__main {
   max-width: 41%;
   margin: 0 auto 0 8.05%;
-  padding: 0 0 136px; }
+  padding: 0; }
 
 .faq h2 {
   margin: 0 0 8px;
@@ -2197,18 +2197,16 @@ button.swiper-pagination-bullet {
 .review {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 21px 0 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-reviews_watercolor-desktop@1x.png") center no-repeat;
-  background-size: cover; }
+  background: url("../img/bg-reviews_watercolor-desktop@1x.png") right center no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .review {
-      background: url("../img/bg-reviews_watercolor-desktop@2x.png") center no-repeat;
-      background-size: cover; } }
+      background: url("../img/bg-reviews_watercolor-desktop@2x.png") right center no-repeat; } }
 
 .review h2 {
-  margin: 0 0 48px;
+  margin: 0 0 8px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2225,10 +2223,10 @@ button.swiper-pagination-bullet {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-reviews_city-desktop@1x.png") right center no-repeat; }
+  background: url("../img/bg-reviews_city-desktop@1x.png") right top no-repeat; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .review__container {
-      background: url("../img/bg-reviews_city-desktop@2x.png") right center no-repeat; } }
+      background: url("../img/bg-reviews_city-desktop@2x.png") right top no-repeat; } }
 
 .review__item {
   display: -webkit-box;
@@ -2236,16 +2234,16 @@ button.swiper-pagination-bullet {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1084px; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 1084px;
+  margin: 0 auto; }
 
-.review__item-text {
-  width: 50%; }
+.review__item-photo {
+  margin: 0 40px 0 7.17%;
+  font-size: 0;
+  line-height: 0; }
 
 .review__item-text h3 {
   margin: 0 0 8px;
@@ -2257,6 +2255,9 @@ button.swiper-pagination-bullet {
   opacity: 0.74; }
 
 .review__subtitle {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 32px;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -2265,12 +2266,13 @@ button.swiper-pagination-bullet {
   opacity: 0.74; }
 
 .review__subtitle--blue {
+  margin-right: 4px;
   color: #1fc0fc;
   opacity: 1; }
 
 .review__item-text p {
   max-width: 680px;
-  margin: 20px 0;
+  margin: 0 0 17px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -2279,11 +2281,13 @@ button.swiper-pagination-bullet {
   opacity: 0.74; }
 
 .review__item-text a {
+  display: block;
+  margin: 0 0 56px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 25px;
-  color: #1fc0fC;
+  color: #1fc0fc;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline; }
 
@@ -2291,16 +2295,31 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 150px;
+  width: 104px;
   margin: 0 0 0 auto;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  text-align: right; }
 
-.review__social-list li {
-  margin-left: 14px;
+.review__social-list a {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
   opacity: 0.16; }
 
+.review__social-list li:first-child {
+  margin: 0; }
+
+.review__social-list li {
+  margin: 0 0 0 14px; }
+
+.review__social-list li:last-child {
+  margin: 0 0 0 18px; }
+
 .review__container .swiper-pagination {
+  width: auto;
+  left: 36.82%;
+  bottom: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -2309,16 +2328,16 @@ button.swiper-pagination-bullet {
   opacity: 0.5; }
 
 .review__container .swiper-button-next {
-  left: 53%;
-  bottom: 15px;
+  left: 42.9%;
+  bottom: 10px;
   width: 15px;
   height: 8px;
   background: url("../img/icon_reviews_arrow_right.svg") center no-repeat;
   opacity: 0.2; }
 
 .review__container .swiper-button-prev {
-  left: 52%;
-  bottom: 15px;
+  left: 40.85%;
+  bottom: 10px;
   width: 15px;
   height: 8px;
   background: url("../img/icon_reviews_arrow_left.svg") center no-repeat;
