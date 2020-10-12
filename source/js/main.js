@@ -114,33 +114,31 @@
 
   programs.classList.remove('programs--nojs');
 
-  var addTabsClickHandler = function (link, text) {
+  var addTabsClickHandler = function (activeLink, activeText, link, text) {
     link.addEventListener('click', function () {
 
-      var activeNavLink = programs.querySelector('.programs__nav-link--active');
-      var activeDescription = programs.querySelector('.programs__item--active');
+      var activeNavLink = document.querySelector('.' + activeLink);
+      var activeDescription = document.querySelector('.' + activeText);
 
-      activeNavLink.classList.remove('programs__nav-link--active');
-      activeDescription.classList.remove('programs__item--active');
+      activeNavLink.classList.remove(activeLink);
+      activeDescription.classList.remove(activeText);
 
-      link.classList.add('programs__nav-link--active');
-      text.classList.add('programs__item--active');
+      link.classList.add(activeLink);
+      text.classList.add(activeText);
     });
   };
 
   if (window.innerWidth > 767) {
     for (var i = 0; i < navLinks.length; i++) {
-      addTabsClickHandler(navLinks[i], descriptions[i]);
+      addTabsClickHandler('programs__nav-link--active', 'programs__item--active', navLinks[i], descriptions[i]);
     }
   }
-
 
   // Слайдер мобильной версии раздела программы
 
   /* eslint-disable */
 
   if (window.innerWidth <= 767 && !programs.classList.contains('programs--nojs')) {
-    console.log('lf');
     var slideNav = new Swiper('.programs__nav', {
       spaceBetween: 0,
       slidesPerView: 'auto',
@@ -168,4 +166,47 @@
     });
   }
   /* eslint-enable */
+
+  // Табы вопрос/ответ
+  var faq = document.querySelector('.faq');
+  var faqLinks = faq.querySelectorAll('.faq__link');
+  var faqItems = faq.querySelectorAll('.faq__item');
+
+  faq.classList.remove('faq--nojs');
+
+  var addTabsClickToggle = function (link, text) {
+    link.addEventListener('click', function () {
+
+      link.classList.toggle('faq__link--active');
+      text.classList.toggle('faq__item--active');
+    });
+  };
+
+  for (i = 0; i < faqLinks.length; i++) {
+    addTabsClickToggle(faqLinks[i], faqItems[i]);
+  }
+
+  // Слайдер отзывов
+
+/* eslint-disable */
+
+  var life = document.querySelector('.life');
+  life.classList.remove('life--nojs');
+
+  var reviewSwiper = new Swiper('.review__container', {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+/* eslint-enable */
 })();

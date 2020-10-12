@@ -1,6 +1,6 @@
 .life {
   width: 100%;
-  margin: -176px auto 0;
+  margin: -176px auto 104px;
   padding: 36px 0 41px;
   box-sizing: border-box;
   background: url("../img/bg-life_watercolor-desktop@1x.png") center no-repeat;
@@ -111,10 +111,16 @@
   left: 32px;
 }
 
+@media (max-width: $tablet-width-only) {
+  .life {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .life {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 51px;
     padding: 16px;
     background: none;
 

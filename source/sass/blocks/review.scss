@@ -1,0 +1,234 @@
+.review {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("../img/bg-reviews_watercolor-desktop@1x.png") center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-reviews_watercolor-desktop@2x.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.review h2 {
+  margin: 0 0 48px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1fc0fc;
+}
+
+.review__container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: url("../img/bg-reviews_city-desktop@1x.png") right center no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-reviews_city-desktop@2x.png") right center no-repeat;
+  }
+}
+
+
+.review__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1084px;
+}
+
+.review__item-text {
+  width: 50%;
+}
+
+.review__item-text h3 {
+  margin: 0 0 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #484848;
+  opacity: 0.74;
+}
+
+.review__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #484848;
+  opacity: 0.74;
+}
+
+.review__subtitle--blue {
+  color: #1fc0fc;
+  opacity: 1;
+}
+
+.review__item-text p {
+  max-width: 680px;
+  margin: 20px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #484848;
+  opacity: 0.74;
+}
+
+.review__item-text a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #1fc0fc;
+  text-decoration-line: underline;
+}
+
+.review__social-list {
+  display: flex;
+  width: 150px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.review__social-list li {
+  margin-left: 14px;
+  opacity: 0.16;
+}
+
+.review__container .swiper-pagination {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #484848;
+  opacity: 0.5;
+}
+
+.review__container .swiper-button-next {
+  left: 53%;
+  bottom: 15px;
+  width: 15px;
+  height: 8px;
+  background: url("../img/icon_reviews_arrow_right.svg") center no-repeat;
+  opacity: 0.2;
+}
+
+.review__container .swiper-button-prev {
+  left: 52%;
+  bottom: 15px;
+  width: 15px;
+  height: 8px;
+  background: url("../img/icon_reviews_arrow_left.svg") center no-repeat;
+  opacity: 0.2;
+}
+
+@media (max-width: $mobile-width-only) {
+  .review {
+    background: url("../img/bg-reviews_watercolor-mobile@1x.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-reviews_watercolor-mobile@2x.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .review h2 {
+    margin: 0 0 24px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .review__wrapper {
+    background: url("../img/bg-reviews_city-mobile@1x.png") right center no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-reviews_city-mobile@2x.png") right center no-repeat;
+    }
+  }
+
+  .review__item-photo {
+    margin: 0 0 48px;
+  }
+
+  .review__item-photo img {
+    width: 240px;
+    height: auto;
+  }
+
+  .review__item-text {
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  .review__item-text h3 {
+    margin: 0 0 8px;
+  }
+
+  .review__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .review__subtitle--blue {
+    display: block;
+  }
+
+  .review__item-text p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .review__item-text a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .review__social-list {
+    width: auto;
+    margin: 0;
+  }
+
+  .review__social-list li {
+    margin: 0 14px 0 0;
+  }
+
+  .review__container .swiper-pagination {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #484848;
+    opacity: 0.5;
+  }
+
+  .review__container .swiper-button-next {
+    left: 64%;
+    bottom: 65%;
+  }
+
+  .review__container .swiper-button-prev {
+    left: 60%;
+    bottom: 65%;
+  }
+
+  .review__container .swiper-pagination-fraction {
+    bottom: 64%;
+    left: 0;
+    width: 100%;
+  }
+}

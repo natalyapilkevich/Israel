@@ -1,0 +1,118 @@
+.photos {
+  width: 100%;
+  margin: 0 auto 57px;
+  padding-left: 4px;
+  box-sizing: border-box;
+  background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat;
+  }
+}
+
+.photos__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.photos__main {
+  max-width: 30%;
+  margin: 0 11.9% 0 auto;
+  padding: 120px 0 196px;
+}
+
+.photos h2 {
+  margin: 0 0 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1fc0fc;
+}
+
+.photos p {
+  margin: 0 0 48px;
+  padding: 0 10px 0 4px;
+  box-sizing: border-box;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #ffffff;
+  opacity: 0.87;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.photos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  margin-left: 1px;
+  padding-bottom: 16px;
+}
+
+.photos svg {
+  margin-right: 8px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .photos__main {
+    padding: 246px 0 70px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .photos {
+    margin: 0 auto;
+    padding-left: 0;
+    background: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: none;
+    }
+  }
+
+  .photos__main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .photos h2 {
+    margin: 0;
+    padding-right: 4px;
+    text-align: center;
+  }
+
+  .photos p {
+    margin: -5px 0 16px;
+    padding: 101px 0 41px 23px;
+    font-size: 16px;
+    line-height: 26px;
+    background: url("../img/bg-blog_sunset-mobile@1x.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-blog_sunset-mobile@2x.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .photos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  .photos svg {
+    margin-right: 8px;
+  }
+}
