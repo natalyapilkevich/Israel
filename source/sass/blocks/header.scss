@@ -9,7 +9,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 31px 115px 32px 110px;
+  padding: 31px 8.42% 32px 8.05%;
   box-sizing: border-box;
 }
 
@@ -49,13 +49,11 @@
 
 @media (max-width: $mobile-width-only) {
   .header {
-    padding: 20px 9px 0 16px;
-  }
-
-  .header ul {
     position: relative;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: -32px;
+    padding: 20px 2.8% 20px 5%;
   }
 
   .header__link {
@@ -67,8 +65,8 @@
 
   .header__link--logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 16px;
     margin: 0;
     padding: 0;
   }

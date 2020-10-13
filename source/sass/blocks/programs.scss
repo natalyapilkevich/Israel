@@ -1,6 +1,5 @@
 .programs {
   width: 100%;
-  max-width: 1366px;
   margin: 0 auto;
   padding: 48px 0 10px;
   box-sizing: border-box;
@@ -56,7 +55,10 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
+  text-align: left;
   color: #484848;
+  background-color: transparent;
+  border: none;
   opacity: 0.87;
 
   &::before {
@@ -71,11 +73,16 @@
   &:hover,
   &:focus {
     color: #ffc341;
+    outline: none;
     cursor: pointer;
 
     &::before {
       filter: invert(73%) sepia(32%) saturate(1037%) hue-rotate(340deg) brightness(112%) contrast(101%);
     }
+  }
+
+  &:active {
+    outline: none;
   }
 }
 
@@ -206,7 +213,6 @@
   }
 }
 
-
 .programs__content {
   width: 608px;
   margin: 0;
@@ -237,39 +243,23 @@
 }
 
 @media (max-width: $tablet-width-only) {
-  .programs__content {
-    flex-shrink: 1;
-    max-width: 440px;
-  }
-
-  .programs__tabs-wrapper {
-    justify-content: center;
-    margin: 0;
-    padding: 0 16px;
-  }
-
-  .programs__nav {
-    margin-right: 32px;
-  }
-
   .programs h2 {
     text-align: center;
   }
 
-  .programs--nojs .swiper-wrapper {
-    justify-content: center;
-    margin: 0 auto;
+  .programs__content {
+    width: 60%;
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .programs {
     width: 100%;
-    padding: 36px 0 14px;
-    background: url("../img/bg-programs_city-mobile@1x.png") right 40% no-repeat;
+    padding: 8px 0 12px;
+    background: url("../img/bg-programs_city-mobile@1x.png") right 35% no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/bg-programs_city-mobile@2x.png") right 40% no-repeat;
+      background: url("../img/bg-programs_city-mobile@2x.png") right 35% no-repeat;
     }
   }
 
@@ -277,11 +267,14 @@
     margin: 0 0 16px;
     font-size: 32px;
     line-height: 39px;
+    text-align: center;
   }
 
   .programs__tabs-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
     padding: 0;
   }
 
@@ -300,7 +293,7 @@
   .programs__nav-link {
     width: auto;
     margin: 0 4px 0 0;
-    padding: 15px 13.5px 14px 52px;
+    padding: 15px 10px 14px 52px;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
@@ -370,10 +363,15 @@
 
   .programs__content p {
     width: 100%;
-    padding: 0 16px 0 16px;
+    padding: 0 5%;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .programs--nojs .swiper-wrapper {
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .programs--nojs .programs__nav-link {
@@ -395,7 +393,7 @@
     width: auto;
   }
 
-  .programs__nav .swiper-slide-thumb-active a {
+  .swiper-slide-thumb-active button {
     position: relative;
     font-weight: 500;
     font-size: 16px;

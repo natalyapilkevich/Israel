@@ -1,9 +1,9 @@
 .photos {
   width: 100%;
   margin: 0 auto 57px;
-  padding-left: 4px;
   box-sizing: border-box;
-  background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat;
+  background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat;
@@ -58,12 +58,6 @@
 
 .photos svg {
   margin-right: 8px;
-}
-
-@media (max-width: $tablet-width-only) {
-  .photos__main {
-    padding: 246px 0 70px;
-  }
 }
 
 @media (max-width: $mobile-width-only) {

@@ -106,10 +106,24 @@
     }
   });
 
+  var contactsForm = document.querySelector('.contacts__form');
+  var contactsName = contactsForm.querySelector('[name=name]');
+  var contactsTel = contactsForm.querySelector('[name=tel]');
+
+  contactsForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+
+    checkValidity(contactsForm);
+
+    if (!contactsName.validity.valueMissing && !contactsTel.validity.valueMissing && !contactsTel.validity.patternMismatch) {
+      openPopup(messageModal);
+    }
+  });
+
   // табы раздела программы
 
   var programs = document.querySelector('.programs');
-  var navLinks = programs.querySelectorAll('.programs__nav a');
+  var navLinks = programs.querySelectorAll('.programs__nav button');
   var descriptions = programs.querySelectorAll('.programs__item');
 
   programs.classList.remove('programs--nojs');
@@ -159,9 +173,15 @@
   life.classList.remove('life--nojs');
 
   if (window.innerWidth <= 767 && !programs.classList.contains('life--nojs')) {
+    var lifePagination = document.createElement('div');
+    lifePagination.className = "swiper-pagination life__pagination";
+    var lifeContainer = document.querySelector('.life__container');
+
+    lifeContainer.append(lifePagination);
+
     var lifeSwiper = new Swiper('.life__container', {
       pagination: {
-        el: '.swiper-pagination',
+        el: '.life__pagination',
       },
     });
   }
@@ -190,8 +210,9 @@
 
 /* eslint-disable */
 
-  var life = document.querySelector('.life');
-  life.classList.remove('life--nojs');
+  var life = document.querySelector('.review');
+
+  life.classList.remove('review--nojs');
 
   var reviewSwiper = new Swiper('.review__container', {
     spaceBetween: 0,

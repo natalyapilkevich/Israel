@@ -3,7 +3,7 @@
   z-index: 1;
   width: 100%;
   margin: 0 auto;
-  padding: 423px 130px 310px 130px;
+  padding: 423px 9.52% 310px;
   box-sizing: border-box;
 }
 
@@ -50,15 +50,8 @@
 
 @media (max-width: $mobile-width-only) {
   .topic {
-    margin: -39px auto 0;
-    padding: 303px 5px 254px;
-    background: url("../img/main_girl-mobile@1x.png") center no-repeat;
-    background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/main_girl-mobile@2x.png") center no-repeat;
-      background-size: cover;
-    }
+    margin: 0 auto;
+    padding: 244px 5% 254px;
   }
 
   .topic p {

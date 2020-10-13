@@ -2,6 +2,12 @@
   position: relative;
   width: 100%;
   margin: 0 auto 117px;
+  box-sizing: border-box;
+  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 47% no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 47% no-repeat;
+  }
 }
 
 .how-go__wrapper {
@@ -9,13 +15,10 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 30px 0 18px;
-  box-sizing: border-box;
-  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 47% no-repeat,
-    url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% center no-repeat;
+  background: url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% center no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 47% no-repeat,
-      url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% center no-repeat;
+    background: url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% center no-repeat;
   }
 }
 
@@ -148,15 +151,20 @@
 }
 
 @media (max-width: $tablet-width-only) {
-  .how-go {
-    margin: 0 auto;
-    padding: 0 0 160px;
-    background: none;
-  }
-
   .how-go__wrapper {
     width: 100%;
-    padding: 80px 5% 0;
+    background: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .how-go {
+    margin: 0 auto;
+    padding: 11px 5% 43px;
     background: url("../img/bg-how_to_go_stamp-mobile@1x.png") right 57% no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -171,6 +179,8 @@
   }
 
   .how-go h2 {
+    font-size: 32px;
+    line-height: 39px;
     text-align: center;
   }
 
@@ -216,15 +226,12 @@
       border: none;
     }
   }
-}
 
-@media (max-width: $mobile-width-only) {
-  .how-go {
-    padding: 0 0 63px;
-  }
+  .how-go__background {
+    background: none;
 
-  .how-go h2 {
-    font-size: 32px;
-    line-height: 39px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: none;
+    }
   }
 }

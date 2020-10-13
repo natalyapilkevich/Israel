@@ -1,14 +1,16 @@
 .faq {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 27px;
   padding: 79px 0 0;
   box-sizing: border-box;
-  background: url("../img/bg-faq_watercolor-desktop@1x.png") top no-repeat;
-  background-size: cover;
+  background: url("../img/bg-faq_bag-desktop@1x.png") left bottom no-repeat,
+    url("../img/bg-faq_watercolor-desktop@1x.png") top no-repeat;
+  background-size: auto, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-faq_watercolor-desktop@2x.png") top no-repeat;
-    background-size: cover;
+    background: url("../img/bg-faq_bag-desktop@2x.png") left bottom no-repeat,
+      url("../img/bg-faq_watercolor-desktop@2x.png") top no-repeat;
+    background-size: auto, cover;
   }
 }
 
@@ -16,14 +18,12 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 0 136px;
+  padding: 0 0 130px;
   box-sizing: border-box;
-  background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat,
-    url("../img/bg-faq_bag-desktop@1x.png") left bottom no-repeat;
+  background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-faq_couple-desktop@2x.png") right top no-repeat,
-      url("../img/bg-faq_bag-desktop@2x.png") left bottom no-repeat;
+    background: url("../img/bg-faq_couple-desktop@2x.png") right top no-repeat;
   }
 }
 
@@ -63,19 +63,27 @@
   position: relative;
   align-items: baseline;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 25px;
+  text-align: left;
   color: #484848;
+  border: none;
+  background-color: transparent;
 
   &:hover,
   &:focus {
+    outline: none;
     opacity: 0.8;
     cursor: pointer;
   }
 
   &:active {
+    outline: none;
     opacity: 0.5;
   }
 }
@@ -124,9 +132,17 @@
   display: block;
 }
 
+.faq--nojs .faq__item {
+  display: block;
+}
+
 @media (max-width: $tablet-width-only) {
   .faq {
-    padding: 2px 0 0;
+    margin: 0 auto 41px;
+    padding: 81px 5% 0;
+  }
+
+  .faq__wrapper {
     background: none;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -134,20 +150,9 @@
     }
   }
 
-  .faq__wrapper {
-    width: 100%;
-    padding: 80px 5% 0;
-    background: url("../img/bg-faq_bag-mobile@1x.png") left 79% no-repeat;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/bg-faq_bag-mobile@2x.png") left 79% no-repeat;
-    }
-  }
-
   .faq__main {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 0 136px;
   }
 
   .faq h2 {
@@ -156,11 +161,19 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .faq {
+    background: url("../img/bg-faq_bag-mobile@1x.png") left 88% no-repeat, none;
+  }
+
+  .faq__wrapper {
+    width: 100%;
+    padding: 0 0 40px;
+  }
+
   .faq h2 {
     margin: 0;
     font-size: 32px;
     line-height: 39px;
-    text-align: center;
   }
 
   .faq li {

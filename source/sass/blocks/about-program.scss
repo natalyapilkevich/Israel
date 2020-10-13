@@ -24,10 +24,6 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1fc0fc;
-
-  @media (min-width: 1750px) {
-    padding-top: 40px;
-  }
 }
 
 .about-program p {
@@ -71,7 +67,14 @@
 @media (max-width: $mobile-width-only) {
   .about-program {
     margin: -5px auto 0;
-    padding: 0 0 40px;
+    padding: 0 0 69px;
+    background: url("../img/bg-about_program_map-mobile@1x.png") center no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-about_program_map-mobile@2x.png") center no-repeat;
+      background-size: cover;
+    }
   }
 
   .about-program h2 {
@@ -84,7 +87,7 @@
   }
 
   .about-program p {
-    width: 288px;
+    width: 90%;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 26px;
@@ -98,19 +101,5 @@
   .about-program__play-button svg {
     width: 80px;
     height: 80px;
-  }
-
-  .about-program__background {
-    position: absolute;
-    bottom: 31%;
-    width: 100%;
-    min-height: 186px;
-    background: url("../img/bg-about_program_map-mobile@1x.png") center bottom no-repeat;
-    background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/bg-about_program_map-mobile@2x.png") center bottom no-repeat;
-      background-size: cover;
-    }
   }
 }
