@@ -3,12 +3,12 @@
   z-index: 1;
   width: 100%;
   margin: 0 auto;
-  padding: 423px 9.52% 310px;
+  padding: 423px 9.52% 146px;
   box-sizing: border-box;
 }
 
 .topic p {
-  margin: 0 auto;
+  margin: 0 auto 32px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -30,37 +30,19 @@
   }
 }
 
-.topic a::after {
-  content: "";
-  position: absolute;
-  bottom: 146px;
-  left: 50%;
-  transform: translateX(-49%);
-  width: 76px;
-  height: 132px;
-  background-image: url("../img/icon_scroll_prompt@1x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/icon_scroll_prompt@2x.png") center no-repeat;
-    background-size: cover;
-  }
+.topic img {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: $mobile-width-only) {
   .topic {
     margin: 0 auto;
-    padding: 244px 5% 254px;
+    padding: 244px 5% 90px;
   }
 
   .topic p {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .topic a::after {
-    bottom: 90px;
-    transform: translateX(-50%);
   }
 }
