@@ -4,9 +4,11 @@
   padding: 48px 0 10px;
   box-sizing: border-box;
   background: url("../img/bg-programs_city-desktop@1x.png") right top no-repeat;
+  background-size: 49.78%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-programs_city-desktop@2x.png") right top no-repeat;
+    background-size: 49.78%;
   }
 }
 
