@@ -718,7 +718,8 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   line-height: 20px;
   font-variant: small-caps;
-  color: #484848; }
+  color: #484848;
+  opacity: 0.87; }
 
 .form input,
 .form input::-moz-placeholder {
@@ -728,7 +729,8 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   line-height: 20px;
   font-variant: small-caps;
-  color: #484848; }
+  color: #484848;
+  opacity: 0.87; }
 
 .form input,
 .form input:-ms-input-placeholder {
@@ -738,7 +740,8 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   line-height: 20px;
   font-variant: small-caps;
-  color: #484848; }
+  color: #484848;
+  opacity: 0.87; }
 
 .form input,
 .form input::-ms-input-placeholder {
@@ -748,7 +751,8 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   line-height: 20px;
   font-variant: small-caps;
-  color: #484848; }
+  color: #484848;
+  opacity: 0.87; }
 
 .form input,
 .form input::placeholder {
@@ -758,7 +762,8 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   line-height: 20px;
   font-variant: small-caps;
-  color: #484848; }
+  color: #484848;
+  opacity: 0.87; }
 
 .form input {
   width: 100%;
@@ -836,32 +841,32 @@ button.swiper-pagination-bullet {
     background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(109.15deg, #ffc341 -50.3%, #ffd701 63.1%); }
 
 .head-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   width: 100%;
   margin: 0 auto;
-  background: url("../img/main_girl-desktop@1x.png") center no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
+  background: url("../img/main_girl-desktop@1x.png") center 10% no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .head-wrapper {
-      background: url("../img/main_girl-desktop@2x.png") center no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
+      background: url("../img/main_girl-desktop@2x.png") center 10% no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
       background-size: cover; } }
 
 @media (max-width: 767px) {
   .head-wrapper {
     width: 100%;
     margin: 32px auto 0;
-    background: url("../img/main_girl-mobile@1x.png") center no-repeat;
+    background: url("../img/main_girl-mobile@1x.png") center 10% no-repeat;
     background-size: cover; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .head-wrapper {
-      background: url("../img/main_girl-mobile@2x.png") center no-repeat;
+      background: url("../img/main_girl-mobile@2x.png") center 10% no-repeat;
       background-size: cover; } }
 
 .header {
   position: relative;
   z-index: 2;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -900,6 +905,11 @@ button.swiper-pagination-bullet {
 
 .header__link--logo {
   padding-right: 22px; }
+  .header__link--logo:hover, .header__link--logo:focus {
+    opacity: 1;
+    cursor: default; }
+  .header__link--logo:active {
+    opacity: 1; }
 
 .header__link--small-caps {
   font-variant: small-caps;
@@ -962,6 +972,10 @@ button.swiper-pagination-bullet {
   display: block;
   margin: 0 auto; }
 
+@media (max-width: 1023px) {
+  .topic {
+    padding: 275px 9.52% 95px; } }
+
 @media (max-width: 767px) {
   .topic {
     margin: 0 auto;
@@ -970,20 +984,25 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     line-height: 24px; } }
 
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
 .about-program {
   position: relative;
   width: 100%;
-  margin: -11px auto 56px;
+  margin: -11px auto 0;
   padding: 0 0 92px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
-  background-size: cover; }
+  background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about-program {
       background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
-      background-size: cover; } }
+      background-size: 100%; } }
 
 .about-program h2 {
   margin: 0 0 24px;
@@ -1010,33 +1029,68 @@ button.swiper-pagination-bullet {
   width: 100%;
   margin: 0 auto; }
 
+.about-program__play-button svg {
+  fill: #1fc0fc;
+  -webkit-transform: translate(2px, 1px);
+          transform: translate(2px, 1px); }
+
 .about-program__play-button {
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -54%);
-          transform: translate(-50%, -54%);
-  background-color: transparent;
-  border: none; }
-  .about-program__play-button:hover, .about-program__play-button:focus {
+  -webkit-transform: translate(-50%, -58%);
+          transform: translate(-50%, -58%);
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  background-color: white;
+  border: none;
+  border-radius: 50%; }
+  .about-program__play-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 96px;
+    height: 96px;
+    background-color: white;
+    opacity: 0.32;
+    border-radius: 50%;
     cursor: pointer; }
+  .about-program__play-button:hover {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); }
+  .about-program__play-button:hover svg {
+    fill: #63d3fd; }
+  .about-program__play-button:active {
+    background: #f4f4f4;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); }
+  .about-program__play-button:active svg {
+    fill: #1fc0fc; }
 
 @media (max-width: 900px) {
   .about-program__picture-wrapper img {
     width: 320px;
     height: 224px; } }
 
+@media (min-width: 1500px) {
+  .about-program {
+    padding-top: 20px; } }
+
 @media (max-width: 767px) {
   .about-program {
     margin: -5px auto 0;
     padding: 0 0 69px;
     background: url("../img/bg-about_program_map-mobile@1x.png") center no-repeat;
-    background-size: cover; } }
+    background-size: 100%; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .about-program {
       background: url("../img/bg-about_program_map-mobile@2x.png") center no-repeat;
-      background-size: cover; } }
+      background-size: 100%; } }
 
 @media (max-width: 767px) {
   .about-program h2 {
@@ -1054,24 +1108,29 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     line-height: 26px;
     text-align: left; }
-  .about-program__play-button {
-    -webkit-transform: translate(-50%, -41%);
-            transform: translate(-50%, -41%); }
   .about-program__play-button svg {
-    width: 80px;
-    height: 80px; } }
+    width: 12.5px;
+    height: 18.53px; }
+  .about-program__play-button {
+    width: 53.33px;
+    height: 53.33px;
+    -webkit-transform: translate(-50%, -39%);
+            transform: translate(-50%, -39%); }
+    .about-program__play-button::after {
+      width: 80px;
+      height: 80px; } }
 
 .programs {
   width: 100%;
   margin: 0 auto;
-  padding: 48px 0 10px;
+  padding: 104px 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-programs_city-desktop@1x.png") right top no-repeat;
+  background: url("../img/bg-programs_city-desktop@1x.png") right 34% no-repeat;
   background-size: 49.78%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .programs {
-      background: url("../img/bg-programs_city-desktop@2x.png") right top no-repeat;
+      background: url("../img/bg-programs_city-desktop@2x.png") right 34% no-repeat;
       background-size: 49.78%; } }
 
 .programs__tabs-wrapper {
@@ -1164,6 +1223,7 @@ button.swiper-pagination-bullet {
   font-variant: small-caps;
   color: #ffffff;
   opacity: 1;
+  overflow: visible;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%); }
   .programs__nav-link--active::before {
@@ -1267,6 +1327,8 @@ button.swiper-pagination-bullet {
   opacity: 0.87; }
 
 @media (max-width: 1023px) {
+  .programs__tabs-wrapper {
+    padding-left: 25px; }
   .programs h2 {
     text-align: center; }
   .programs__content {
@@ -1276,10 +1338,12 @@ button.swiper-pagination-bullet {
   .programs {
     width: 100%;
     padding: 8px 0 12px;
-    background: url("../img/bg-programs_city-mobile@1x.png") right 35% no-repeat; } }
+    background: url("../img/bg-programs_city-mobile@1x.png") right 35% no-repeat;
+    background-size: 92.5%; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .programs {
-      background: url("../img/bg-programs_city-mobile@2x.png") right 35% no-repeat; } }
+      background: url("../img/bg-programs_city-mobile@2x.png") right 35% no-repeat;
+      background-size: 92.5%; } }
 
 @media (max-width: 767px) {
   .programs h2 {
@@ -1404,22 +1468,26 @@ button.swiper-pagination-bullet {
 
 .want-go {
   width: 100%;
-  margin: 0 auto 160px;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-want_to_go_backpack-desktop@1x.png") left 40% no-repeat; }
+  background: url("../img/bg-want_to_go_backpack-desktop@1x.png") left 40% no-repeat;
+  background-size: 10.76%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .want-go {
-      background: url("../img/bg-want_to_go_backpack-desktop@2x.png") left center no-repeat; } }
+      background: url("../img/bg-want_to_go_backpack-desktop@2x.png") left 40% no-repeat;
+      background-size: 10.76%; } }
 
 .want-go__wrapper {
   max-width: 1366px;
   margin: 0 auto;
   padding: 209px 0 123px;
-  background: url("../img/bg-want_to_go_girl_flag-desktop@1x.png") right center no-repeat; }
+  background: url("../img/bg-want_to_go_girl_flag-desktop@1x.png") right center no-repeat;
+  background-size: 59.88%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .want-go__wrapper {
-      background: url("../img/bg-want_to_go_girl_flag-desktop@2x.png") right center no-repeat; } }
+      background: url("../img/bg-want_to_go_girl_flag-desktop@2x.png") right center no-repeat;
+      background-size: 59.88%; } }
 
 .want-go__main {
   max-width: 946px;
@@ -1466,13 +1534,15 @@ button.swiper-pagination-bullet {
   .want-go__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 52px 5% 307px;
+    padding: 52px 5% 60%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: url("../img/bg-want_to_go_girl_flag-mobile@1x.png") center bottom no-repeat; } }
+    background: url("../img/bg-want_to_go_girl_flag-mobile@1x.png") center bottom no-repeat;
+    background-size: 60%; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .want-go__wrapper {
-      background: url("../img/bg-want_to_go_girl_flag-mobile@2x.png") center bottom no-repeat; } }
+      background: url("../img/bg-want_to_go_girl_flag-mobile@2x.png") center bottom no-repeat;
+      background-size: 60%; } }
 
 @media (max-width: 1023px) {
   .want-go p {
@@ -1487,15 +1557,17 @@ button.swiper-pagination-bullet {
     margin: 0 auto; } }
 
 @media (max-width: 767px) {
-  .want-go {
-    margin: 0 auto 40px;
-    padding: 0;
-    background: url("../img/bg-want_to_go_backpack-mobile@1x.png") left top no-repeat; } }
+  .want-go__wrapper {
+    padding: 52px 5% 307px;
+    background-size: 320px; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .want-go {
-      background: url("../img/bg-want_to_go_backpack-mobile@2x.png") left top no-repeat; } }
+    .want-go__wrapper {
+      background-size: 320px; } }
 
 @media (max-width: 767px) {
+  .want-go {
+    margin: 0 auto;
+    padding: 0; }
   .want-go h2 {
     font-size: 32px;
     line-height: 39px; }
@@ -1506,23 +1578,28 @@ button.swiper-pagination-bullet {
 .how-go {
   position: relative;
   width: 100%;
-  margin: 0 auto 117px;
+  margin: 0 auto;
+  padding: 160px 0 117px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 47% no-repeat; }
+  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 51% no-repeat;
+  background-size: 15.81%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .how-go {
-      background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 47% no-repeat; } }
+      background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 51% no-repeat;
+      background-size: 15.81%; } }
 
 .how-go__wrapper {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 30px 0 18px;
-  background: url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% center no-repeat; }
+  background: url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% center no-repeat;
+  background-size: 42.53%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .how-go__wrapper {
-      background: url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% center no-repeat; } }
+      background: url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% center no-repeat;
+      background-size: 42.53%; } }
 
 .how-go__main {
   max-width: 38.36%;
@@ -1631,16 +1708,16 @@ button.swiper-pagination-bullet {
 .how-go__background {
   position: absolute;
   z-index: -1;
-  top: -156px;
+  top: 5px;
   left: 0;
   width: 100%;
   height: 1119px;
   background: url("../img/bg-how_to_go_watercolor-desktop@1x.png") center no-repeat;
-  background-size: cover; }
+  background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .how-go__background {
       background: url("../img/bg-how_to_go_watercolor-desktop@2x.png") center no-repeat;
-      background-size: cover; } }
+      background-size: 100%; } }
 
 @media (max-width: 1023px) {
   .how-go__wrapper {
@@ -1653,11 +1730,13 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .how-go {
     margin: 0 auto;
-    padding: 11px 5% 43px;
-    background: url("../img/bg-how_to_go_stamp-mobile@1x.png") right 57% no-repeat; } }
+    padding: 51px 5% 43px;
+    background: url("../img/bg-how_to_go_stamp-mobile@1x.png") right 52% no-repeat;
+    background-size: 67.5%; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .how-go {
-      background: url("../img/bg-how_to_go_stamp-mobile@2x.png") right 57% no-repeat; } }
+      background: url("../img/bg-how_to_go_stamp-mobile@2x.png") right 52% no-repeat;
+      background-size: 67.5%; } }
 
 @media (max-width: 767px) {
   .how-go__main {
@@ -1703,16 +1782,16 @@ button.swiper-pagination-bullet {
 
 .life {
   width: 100%;
-  margin: 0 auto 96px;
-  padding: 43px 0 49px;
+  margin: 0 auto;
+  padding: 43px 0 145px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-life_compass-desktop@1x.png") right 82% no-repeat, url("../img/bg-life_watercolor-desktop@1x.png") center no-repeat;
-  background-size: auto, cover; }
+  background: url("../img/bg-life_compass-desktop@1x.png") right 73% no-repeat, url("../img/bg-life_watercolor-desktop@1x.png") top left no-repeat;
+  background-size: 6.59%, 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .life {
-      background: url("../img/bg-life_compass-desktop@2x.png") right 82% no-repeat, url("../img/bg-life_watercolor-desktop@2x.png") center no-repeat;
-      background-size: auto, cover; } }
+      background: url("../img/bg-life_compass-desktop@2x.png") right 73% no-repeat, url("../img/bg-life_watercolor-desktop@2x.png") top left no-repeat;
+      background-size: 6.59%, 100%; } }
 
 .life__wrapper {
   display: -webkit-box;
@@ -1808,8 +1887,8 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .life {
     width: 100%;
-    margin: 0 auto 51px;
-    padding: 16px;
+    margin: 0 auto;
+    padding: 16px 16px 67px;
     background: none; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .life {
@@ -1933,14 +2012,15 @@ button.swiper-pagination-bullet {
 
 .photos {
   width: 100%;
-  margin: 0 auto 57px;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
-  background-size: cover; }
+  background-size: 100%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .photos {
-      background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat; } }
+      background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat;
+      background-size: 100%; } }
 
 .photos__wrapper {
   max-width: 1366px;
@@ -1993,6 +2073,32 @@ button.swiper-pagination-bullet {
 .photos svg {
   margin-right: 8px; }
 
+@media (max-width: 1366px) {
+  .photos {
+    background: url("../img/bg-blog_sunset-desktop@1x.png") top no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
+    background-size: 100%; } }
+  @media (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1366px) and (min-resolution: 144dpi), (max-width: 1366px) and (min-resolution: 1.5dppx) {
+    .photos {
+      background: url("../img/bg-blog_sunset-desktop@2x.png") top no-repeat;
+      background-size: 100%; } }
+
+@media (max-width: 1023px) {
+  .photos {
+    background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
+    background-size: 100%; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .photos {
+      background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat;
+      background-size: 100%; } }
+
+@media (max-width: 1023px) {
+  .photos__main {
+    max-width: 40%;
+    margin: 0 3% 0 auto;
+    padding: 20px 0; }
+  .photos p {
+    margin: 0 0 15px; } }
+
 @media (max-width: 767px) {
   .photos {
     margin: 0 auto;
@@ -2042,16 +2148,16 @@ button.swiper-pagination-bullet {
 
 .faq {
   width: 100%;
-  margin: 0 auto 27px;
-  padding: 79px 0 0;
+  margin: 0 auto;
+  padding: 136px 0 27px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-faq_bag-desktop@1x.png") left bottom no-repeat, url("../img/bg-faq_watercolor-desktop@1x.png") top no-repeat;
-  background-size: auto, cover; }
+  background: url("../img/bg-faq_bag-desktop@1x.png") left 97% no-repeat, url("../img/bg-faq_watercolor-desktop@1x.png") 20% right no-repeat;
+  background-size: 11.2%, 47.22%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .faq {
-      background: url("../img/bg-faq_bag-desktop@2x.png") left bottom no-repeat, url("../img/bg-faq_watercolor-desktop@2x.png") top no-repeat;
-      background-size: auto, cover; } }
+      background: url("../img/bg-faq_bag-desktop@2x.png") left 97% no-repeat, url("../img/bg-faq_watercolor-desktop@2x.png") 20% right no-repeat;
+      background-size: 11.2%, 47.22%; } }
 
 .faq__wrapper {
   width: 100%;
@@ -2060,10 +2166,12 @@ button.swiper-pagination-bullet {
   padding: 0 0 130px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat; }
+  background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat;
+  background-size: 47.22%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .faq__wrapper {
-      background: url("../img/bg-faq_couple-desktop@2x.png") right top no-repeat; } }
+      background: url("../img/bg-faq_couple-desktop@2x.png") right top no-repeat;
+      background-size: 47.22%; } }
 
 .faq__main {
   max-width: 41%;
@@ -2103,7 +2211,7 @@ button.swiper-pagination-bullet {
           align-items: baseline;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 25px 0 0;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2113,13 +2221,23 @@ button.swiper-pagination-bullet {
   color: #484848;
   border: none;
   background-color: transparent; }
+  .faq__link::after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: 0;
+    width: 15px;
+    height: 8px;
+    background: url("../img/icon_faq_arrow_down.svg") center no-repeat; }
   .faq__link:hover, .faq__link:focus {
-    outline: none;
     opacity: 0.8;
     cursor: pointer; }
   .faq__link:active {
-    outline: none;
     opacity: 0.5; }
+
+.faq__link--active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .faq__link span:first-child {
   display: block;
@@ -2130,19 +2248,6 @@ button.swiper-pagination-bullet {
   font-size: 28px;
   line-height: 48px;
   color: #ffc341; }
-
-.faq__link span:last-child::after {
-  position: absolute;
-  content: "";
-  top: 25px;
-  right: 0;
-  width: 15px;
-  height: 8px;
-  background: url("../img/icon_faq_arrow_down.svg") center no-repeat; }
-
-.faq__link--active span:last-child::after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
 
 .faq__item {
   display: none;
@@ -2162,8 +2267,8 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1023px) {
   .faq {
-    margin: 0 auto 41px;
-    padding: 81px 5% 0; }
+    margin: 0 auto;
+    padding: 81px 5% 40px; }
   .faq__wrapper {
     background: none; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -2179,7 +2284,14 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 767px) {
   .faq {
-    background: url("../img/bg-faq_bag-mobile@1x.png") left 88% no-repeat, none; }
+    background: url("../img/bg-faq_bag-mobile@1x.png") left 84% no-repeat, none;
+    background-size: 45.6%; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .faq {
+      background: url("../img/bg-faq_bag-mobile@2x.png") left 84% no-repeat, none;
+      background-size: 45.6%; } }
+
+@media (max-width: 767px) {
   .faq__wrapper {
     width: 100%;
     padding: 0 0 40px; }
@@ -2190,6 +2302,7 @@ button.swiper-pagination-bullet {
   .faq li {
     padding: 23px 0 15px; }
   .faq__link {
+    padding: 0;
     font-size: 16px;
     line-height: 26px; }
   .faq__link span:first-child {
@@ -2197,7 +2310,7 @@ button.swiper-pagination-bullet {
   .faq__link span:last-child {
     padding-right: 25px; }
   .faq__item {
-    margin: 16px 0 0;
+    margin: 18px 0 0;
     font-size: 14px;
     line-height: 22px; } }
 
@@ -2208,11 +2321,11 @@ button.swiper-pagination-bullet {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/bg-reviews_city-desktop@1x.png") right 23% no-repeat, url("../img/bg-reviews_watercolor-desktop@1x.png") right center no-repeat;
-  background-size: auto, cover; }
+  background-size: 38.29%, 92.17%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .review {
       background: url("../img/bg-reviews_city-desktop@2x.png") right 23% no-repeat, url("../img/bg-reviews_watercolor-desktop@2x.png") right center no-repeat;
-      background-size: auto, cover; } }
+      background-size: 38.29%, 92.17%; } }
 
 .review h2 {
   margin: 0 0 8px;
@@ -2239,9 +2352,9 @@ button.swiper-pagination-bullet {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 1084px;
   margin: 0 auto; }
 
@@ -2251,7 +2364,8 @@ button.swiper-pagination-bullet {
   line-height: 0; }
 
 .review__item-text {
-  max-width: 50%; }
+  max-width: 50%;
+  padding-top: 40px; }
 
 .review__item-text h3 {
   margin: 0 0 8px;
@@ -2291,6 +2405,7 @@ button.swiper-pagination-bullet {
 .review__item-text a {
   display: block;
   margin: 0 0 56px;
+  max-width: 160px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -2383,11 +2498,11 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .review {
     background: url("../img/bg-reviews_city-mobile@1x.png") right 64% no-repeat, url("../img/bg-reviews_watercolor-mobile@1x.png") right 80% no-repeat;
-    background-size: auto; } }
+    background-size: 90%, 100%; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .review {
       background: url("../img/bg-reviews_city-mobile@2x.png") right 64% no-repeat, url("../img/bg-reviews_watercolor-mobile@2x.png") right 80% no-repeat;
-      background-size: auto; } }
+      background-size: 90%, 100%; } }
 
 @media (max-width: 767px) {
   .review h2 {
@@ -2684,15 +2799,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 767px) {
   .contacts {
-    padding: 49px 0 64px;
-    background: url("../img/bg-contacts_watercolor-mobile@1x.png") top no-repeat;
-    background-size: cover; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .contacts {
-      background: url("../img/bg-contacts_watercolor-mobile@2x.png") top no-repeat;
-      background-size: cover; } }
-
-@media (max-width: 767px) {
+    padding: 49px 0 64px; }
   .contacts__text {
     width: 100%;
     margin: 0 auto;
@@ -2784,10 +2891,10 @@ button.swiper-pagination-bullet {
 .footer__link--logo {
   opacity: 1; }
   .footer__link--logo:hover, .footer__link--logo:focus {
-    opacity: 0.8;
-    cursor: pointer; }
+    opacity: 1;
+    cursor: default; }
   .footer__link--logo:active {
-    opacity: 0.5; }
+    opacity: 1; }
 
 .footer__link--copyright {
   padding-left: 30px; }

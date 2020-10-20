@@ -1,11 +1,13 @@
 .want-go {
   width: 100%;
-  margin: 0 auto 160px;
+  margin: 0 auto;
   box-sizing: border-box;
   background: url("../img/bg-want_to_go_backpack-desktop@1x.png") left 40% no-repeat;
+  background-size: 10.76%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-want_to_go_backpack-desktop@2x.png") left center no-repeat;
+    background: url("../img/bg-want_to_go_backpack-desktop@2x.png") left 40% no-repeat;
+    background-size: 10.76%;
   }
 }
 
@@ -14,9 +16,11 @@
   margin: 0 auto;
   padding: 209px 0 123px;
   background: url("../img/bg-want_to_go_girl_flag-desktop@1x.png") right center no-repeat;
+  background-size: 59.88%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-want_to_go_girl_flag-desktop@2x.png") right center no-repeat;
+    background-size: 59.88%;
   }
 }
 
@@ -69,12 +73,14 @@
   .want-go__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 52px 5% 307px;
+    padding: 52px 5% 60%;
     box-sizing: border-box;
     background: url("../img/bg-want_to_go_girl_flag-mobile@1x.png") center bottom no-repeat;
+    background-size: 60%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-want_to_go_girl_flag-mobile@2x.png") center bottom no-repeat;
+      background-size: 60%;
     }
   }
 
@@ -96,14 +102,18 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .want-go {
-    margin: 0 auto 40px;
-    padding: 0;
-    background: url("../img/bg-want_to_go_backpack-mobile@1x.png") left top no-repeat;
+  .want-go__wrapper {
+    padding: 52px 5% 307px;
+    background-size: 320px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/bg-want_to_go_backpack-mobile@2x.png") left top no-repeat;
+      background-size: 320px;
     }
+  }
+
+  .want-go {
+    margin: 0 auto;
+    padding: 0;
   }
 
   .want-go h2 {

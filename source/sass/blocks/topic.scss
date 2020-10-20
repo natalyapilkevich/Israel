@@ -35,6 +35,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: $tablet-width-only) {
+  .topic {
+    padding: 275px 9.52% 95px;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .topic {
     margin: 0 auto;

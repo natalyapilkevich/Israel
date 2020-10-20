@@ -1,12 +1,15 @@
 .how-go {
   position: relative;
   width: 100%;
-  margin: 0 auto 117px;
+  margin: 0 auto;
+  padding: 160px 0 117px;
   box-sizing: border-box;
-  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 47% no-repeat;
+  background: url("../img/bg-how_to_go_stamp-desktop@1x.png") right 51% no-repeat;
+  background-size: 15.81%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 47% no-repeat;
+    background: url("../img/bg-how_to_go_stamp-desktop@2x.png") right 51% no-repeat;
+    background-size: 15.81%;
   }
 }
 
@@ -16,9 +19,11 @@
   margin: 0 auto;
   padding: 30px 0 18px;
   background: url("../img/bg-how_to_go_couple-desktop@1x.png") 1.5% center no-repeat;
+  background-size: 42.53%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-how_to_go_couple-desktop@2x.png") 1.5% center no-repeat;
+    background-size: 42.53%;
   }
 }
 
@@ -137,16 +142,16 @@
 .how-go__background {
   position: absolute;
   z-index: -1;
-  top: -156px;
+  top: 5px;
   left: 0;
   width: 100%;
   height: 1119px;
   background: url("../img/bg-how_to_go_watercolor-desktop@1x.png") center no-repeat;
-  background-size: cover;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-how_to_go_watercolor-desktop@2x.png") center no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
 }
 
@@ -164,11 +169,13 @@
 @media (max-width: $mobile-width-only) {
   .how-go {
     margin: 0 auto;
-    padding: 11px 5% 43px;
-    background: url("../img/bg-how_to_go_stamp-mobile@1x.png") right 57% no-repeat;
+    padding: 51px 5% 43px;
+    background: url("../img/bg-how_to_go_stamp-mobile@1x.png") right 52% no-repeat;
+    background-size: 67.5%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/bg-how_to_go_stamp-mobile@2x.png") right 57% no-repeat;
+      background: url("../img/bg-how_to_go_stamp-mobile@2x.png") right 52% no-repeat;
+      background-size: 67.5%;
     }
   }
 

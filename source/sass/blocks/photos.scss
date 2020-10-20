@@ -1,12 +1,13 @@
 .photos {
   width: 100%;
-  margin: 0 auto 57px;
+  margin: 0 auto;
   box-sizing: border-box;
   background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
-  background-size: cover;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -58,6 +59,40 @@
 
 .photos svg {
   margin-right: 8px;
+}
+
+@media (max-width: 1366px) {
+  .photos {
+    background: url("../img/bg-blog_sunset-desktop@1x.png") top no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
+    background-size: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-blog_sunset-desktop@2x.png") top no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .photos {
+    background: url("../img/bg-blog_sunset-desktop@1x.png") center no-repeat, radial-gradient(ellipse at 1000px 240px, #544750 120px, transparent 240px) center no-repeat;
+    background-size: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-blog_sunset-desktop@2x.png") center no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .photos__main {
+    max-width: 40%;
+    margin: 0 3% 0 auto;
+    padding: 20px 0;
+  }
+
+  .photos p {
+    margin: 0 0 15px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {

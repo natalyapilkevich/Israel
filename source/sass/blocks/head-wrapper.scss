@@ -1,12 +1,13 @@
 
 .head-wrapper {
+  flex: 0 0 auto;
   width: 100%;
   margin: 0 auto;
-  background: url("../img/main_girl-desktop@1x.png") center no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
+  background: url("../img/main_girl-desktop@1x.png") center 10% no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/main_girl-desktop@2x.png") center no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
+    background: url("../img/main_girl-desktop@2x.png") center 10% no-repeat, radial-gradient(ellipse at center, #e2c4a6, transparent, transparent 100%) center no-repeat;
     background-size: cover;
   }
 }
@@ -15,11 +16,11 @@
   .head-wrapper {
     width: 100%;
     margin: 32px auto 0;
-    background: url("../img/main_girl-mobile@1x.png") center no-repeat;
+    background: url("../img/main_girl-mobile@1x.png") center 10% no-repeat;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/main_girl-mobile@2x.png") center no-repeat;
+      background: url("../img/main_girl-mobile@2x.png") center 10% no-repeat;
       background-size: cover;
     }
   }

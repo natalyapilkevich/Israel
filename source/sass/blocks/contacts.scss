@@ -278,13 +278,6 @@
 @media (max-width: $mobile-width-only) {
   .contacts {
     padding: 49px 0 64px;
-    background: url("../img/bg-contacts_watercolor-mobile@1x.png") top no-repeat;
-    background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/bg-contacts_watercolor-mobile@2x.png") top no-repeat;
-      background-size: cover;
-    }
   }
 
   .contacts__text {

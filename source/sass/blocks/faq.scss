@@ -1,16 +1,16 @@
 .faq {
   width: 100%;
-  margin: 0 auto 27px;
-  padding: 79px 0 0;
+  margin: 0 auto;
+  padding: 136px 0 27px;
   box-sizing: border-box;
-  background: url("../img/bg-faq_bag-desktop@1x.png") left bottom no-repeat,
-    url("../img/bg-faq_watercolor-desktop@1x.png") top no-repeat;
-  background-size: auto, cover;
+  background: url("../img/bg-faq_bag-desktop@1x.png") left 97% no-repeat,
+    url("../img/bg-faq_watercolor-desktop@1x.png") 20% right no-repeat;
+  background-size: 11.2%, 47.22%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-faq_bag-desktop@2x.png") left bottom no-repeat,
-      url("../img/bg-faq_watercolor-desktop@2x.png") top no-repeat;
-    background-size: auto, cover;
+    background: url("../img/bg-faq_bag-desktop@2x.png") left 97% no-repeat,
+      url("../img/bg-faq_watercolor-desktop@2x.png") 20% right no-repeat;
+    background-size: 11.2%, 47.22%;
   }
 }
 
@@ -21,9 +21,11 @@
   padding: 0 0 130px;
   box-sizing: border-box;
   background: url("../img/bg-faq_couple-desktop@1x.png") right top no-repeat;
+  background-size: 47.22%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-faq_couple-desktop@2x.png") right top no-repeat;
+    background-size: 47.22%;
   }
 }
 
@@ -64,7 +66,7 @@
   align-items: baseline;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 25px 0 0;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -75,16 +77,31 @@
   border: none;
   background-color: transparent;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: 0;
+    width: 15px;
+    height: 8px;
+    background: url("../img/icon_faq_arrow_down.svg") center no-repeat;
+  }
+
   &:hover,
   &:focus {
-    outline: none;
     opacity: 0.8;
     cursor: pointer;
   }
 
   &:active {
-    outline: none;
     opacity: 0.5;
+  }
+}
+
+
+.faq__link--active {
+  &::after {
+    transform: rotate(180deg);
   }
 }
 
@@ -97,24 +114,6 @@
   font-size: 28px;
   line-height: 48px;
   color: #ffc341;
-}
-
-.faq__link span:last-child {
-  &::after {
-    position: absolute;
-    content: "";
-    top: 25px;
-    right: 0;
-    width: 15px;
-    height: 8px;
-    background: url("../img/icon_faq_arrow_down.svg") center no-repeat;
-  }
-}
-
-.faq__link--active span:last-child {
-  &::after {
-    transform: rotate(180deg);
-  }
 }
 
 .faq__item {
@@ -138,8 +137,8 @@
 
 @media (max-width: $tablet-width-only) {
   .faq {
-    margin: 0 auto 41px;
-    padding: 81px 5% 0;
+    margin: 0 auto;
+    padding: 81px 5% 40px;
   }
 
   .faq__wrapper {
@@ -162,7 +161,13 @@
 
 @media (max-width: $mobile-width-only) {
   .faq {
-    background: url("../img/bg-faq_bag-mobile@1x.png") left 88% no-repeat, none;
+    background: url("../img/bg-faq_bag-mobile@1x.png") left 84% no-repeat, none;
+    background-size: 45.6%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-faq_bag-mobile@2x.png") left 84% no-repeat, none;
+      background-size: 45.6%;
+    }
   }
 
   .faq__wrapper {
@@ -181,6 +186,7 @@
   }
 
   .faq__link {
+    padding: 0;
     font-size: 16px;
     line-height: 26px;
   }
@@ -194,7 +200,7 @@
   }
 
   .faq__item {
-    margin: 16px 0 0;
+    margin: 18px 0 0;
     font-size: 14px;
     line-height: 22px;
   }

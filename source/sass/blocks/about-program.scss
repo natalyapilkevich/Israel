@@ -1,16 +1,16 @@
 .about-program {
   position: relative;
   width: 100%;
-  margin: -11px auto 56px;
+  margin: -11px auto 0;
   padding: 0 0 92px;
   box-sizing: border-box;
   text-align: center;
   background: url("../img/bg-about_program_map-desktop@1x.png") center bottom no-repeat;
-  background-size: cover;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-about_program_map-desktop@2x.png") center bottom no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
 }
 
@@ -42,18 +42,53 @@
   margin: 0 auto;
 }
 
+.about-program__play-button svg {
+  fill: #1fc0fc;
+  transform: translate(2px, 1px);
+}
+
 .about-program__play-button {
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -54%);
-  background-color: transparent;
+  transform: translate(-50%, -58%);
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  background-color: white;
   border: none;
+  border-radius: 50%;
 
-  &:hover,
-  &:focus {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96px;
+    height: 96px;
+    background-color: white;
+    opacity: 0.32;
+    border-radius: 50%;
     cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  &:hover svg {
+    fill: #63d3fd;
+  }
+
+  &:active {
+    background: #f4f4f4;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  &:active svg {
+    fill: #1fc0fc;
   }
 }
 
@@ -64,16 +99,22 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .about-program {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .about-program {
     margin: -5px auto 0;
     padding: 0 0 69px;
     background: url("../img/bg-about_program_map-mobile@1x.png") center no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-about_program_map-mobile@2x.png") center no-repeat;
-      background-size: cover;
+      background-size: 100%;
     }
   }
 
@@ -94,12 +135,21 @@
     text-align: left;
   }
 
-  .about-program__play-button {
-    transform: translate(-50%, -41%);
+  .about-program__play-button svg {
+    width: 12.5px;
+    height: 18.53px;
+    //transform: translate(2px, 1px);
   }
 
-  .about-program__play-button svg {
-    width: 80px;
-    height: 80px;
+  .about-program__play-button {
+    width: 53.33px;
+    height: 53.33px;
+    transform: translate(-50%, -39%);
+
+    &::after {
+      //transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+    }
   }
 }

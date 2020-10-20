@@ -1,16 +1,17 @@
 .life {
   width: 100%;
-  margin: 0 auto 96px;
-  padding: 43px 0 49px;
+  margin: 0 auto;
+  padding: 43px 0 145px;
   box-sizing: border-box;
-  background: url("../img/bg-life_compass-desktop@1x.png") right 82% no-repeat,
-    url("../img/bg-life_watercolor-desktop@1x.png") center no-repeat;
-  background-size: auto, cover;
+  background: url("../img/bg-life_compass-desktop@1x.png") right 73% no-repeat,
+    url("../img/bg-life_watercolor-desktop@1x.png") top left no-repeat;
+  background-size: 6.59%, 100%;
+
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-life_compass-desktop@2x.png") right 82% no-repeat,
-      url("../img/bg-life_watercolor-desktop@2x.png") center no-repeat;
-    background-size: auto, cover;
+    background: url("../img/bg-life_compass-desktop@2x.png") right 73% no-repeat,
+      url("../img/bg-life_watercolor-desktop@2x.png") top left no-repeat;
+    background-size: 6.59%, 100%;
   }
 }
 
@@ -111,8 +112,8 @@
 @media (max-width: $mobile-width-only) {
   .life {
     width: 100%;
-    margin: 0 auto 51px;
-    padding: 16px;
+    margin: 0 auto;
+    padding: 16px 16px 67px;
     background: none;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

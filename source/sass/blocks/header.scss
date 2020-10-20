@@ -1,7 +1,6 @@
 .header {
   position: relative;
   z-index: 2;
-  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,6 +39,16 @@
 
 .header__link--logo {
   padding-right: 22px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    cursor: default;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .header__link--small-caps {

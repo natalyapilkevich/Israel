@@ -5,12 +5,12 @@
   box-sizing: border-box;
   background: url("../img/bg-reviews_city-desktop@1x.png") right 23% no-repeat,
     url("../img/bg-reviews_watercolor-desktop@1x.png") right center no-repeat;
-  background-size: auto, cover;
+  background-size: 38.29%, 92.17%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/bg-reviews_city-desktop@2x.png") right 23% no-repeat,
       url("../img/bg-reviews_watercolor-desktop@2x.png") right center no-repeat;
-    background-size: auto, cover;
+    background-size: 38.29%, 92.17%;
   }
 }
 
@@ -37,7 +37,7 @@
 .review__item {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 1084px;
   margin: 0 auto;
 }
@@ -51,6 +51,7 @@
 
 .review__item-text {
   max-width: 50%;
+  padding-top: 40px;
 }
 
 .review__item-text h3 {
@@ -95,6 +96,7 @@
 .review__item-text a {
   display: block;
   margin: 0 0 56px;
+  max-width: 160px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -201,12 +203,12 @@
   .review {
     background: url("../img/bg-reviews_city-mobile@1x.png") right 64% no-repeat,
       url("../img/bg-reviews_watercolor-mobile@1x.png") right 80% no-repeat;
-    background-size: auto;
+    background-size: 90%, 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-reviews_city-mobile@2x.png") right 64% no-repeat,
         url("../img/bg-reviews_watercolor-mobile@2x.png") right 80% no-repeat;
-      background-size: auto;
+      background-size: 90%, 100%;
     }
   }
 

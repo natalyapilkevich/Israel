@@ -1,13 +1,13 @@
 .programs {
   width: 100%;
   margin: 0 auto;
-  padding: 48px 0 10px;
+  padding: 104px 0 10px;
   box-sizing: border-box;
-  background: url("../img/bg-programs_city-desktop@1x.png") right top no-repeat;
+  background: url("../img/bg-programs_city-desktop@1x.png") right 34% no-repeat;
   background-size: 49.78%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/bg-programs_city-desktop@2x.png") right top no-repeat;
+    background: url("../img/bg-programs_city-desktop@2x.png") right 34% no-repeat;
     background-size: 49.78%;
   }
 }
@@ -117,6 +117,7 @@
   font-variant: small-caps;
   color: #ffffff;
   opacity: 1;
+  overflow: visible;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
 
@@ -245,6 +246,10 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .programs__tabs-wrapper {
+    padding-left: 25px;
+  }
+
   .programs h2 {
     text-align: center;
   }
@@ -259,9 +264,11 @@
     width: 100%;
     padding: 8px 0 12px;
     background: url("../img/bg-programs_city-mobile@1x.png") right 35% no-repeat;
+    background-size: 92.5%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-programs_city-mobile@2x.png") right 35% no-repeat;
+      background-size: 92.5%;
     }
   }
 
