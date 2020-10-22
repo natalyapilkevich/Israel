@@ -1617,27 +1617,28 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   color: #1fc0fc; }
 
-.how-go__text {
+.how-go p {
   max-width: 480px;
-  margin: 0 0 32px;
+  margin: 0 0 25px;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 26px;
-  color: #484848;
-  opacity: 0.87; }
-
-.how-go__text--important {
-  margin: 0 0 25px;
-  font-weight: 500;
   font-size: 17px;
   line-height: 29px;
+  color: #484848;
   opacity: 1; }
 
-.how-go__text--note {
+.how-go p:first-of-type {
+  margin: 0 0 32px;
+  font-size: 15px;
+  line-height: 26px;
+  opacity: 0.87; }
+
+.how-go p:last-of-type {
   position: relative;
   max-width: 520px;
+  margin: 0 0 32px;
   padding-left: 12px;
+  font-size: 15px;
   line-height: 21px;
   color: #484848;
   opacity: 0.5;
@@ -1747,16 +1748,16 @@ button.swiper-pagination-bullet {
     font-size: 32px;
     line-height: 39px;
     text-align: center; }
-  .how-go__text {
+  .how-go p {
     max-width: 100%;
-    margin: 0 0 24px;
-    font-size: 14px;
-    line-height: 22px; }
-  .how-go__text--important {
     margin: 0 0 9px;
     font-size: 16px;
     line-height: 26px; }
-  .how-go__text--note {
+  .how-go p:first-of-type {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 22px; }
+  .how-go p:last-of-type {
     max-width: 100%;
     margin: 0 -5px;
     padding-left: 9px;
