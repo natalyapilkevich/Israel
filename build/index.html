@@ -122,7 +122,7 @@
           <div class="want-go__main">
             <h2>хочу поехать!</h2>
             <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
-            <form class="form" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
+            <form class="form" action="https://echo.htmlacademy.ru/" method="post">
               <input id="want-go-tel" type="tel" name="tel" placeholder="телефон" required="">
               <span class="no-error">Ошибка: неверный формат</span>
               <label class="visually-hidden" for="want-go-tel">Номер телефона</label>
@@ -594,7 +594,7 @@
               <p>Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
               <p>Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!</p>
             </div>
-            <form class="contacts__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
+            <form class="contacts__form form" action="https://echo.htmlacademy.ru/" method="post">
               <div>
                 <input id="contacts-name" type="text" name="name" placeholder="имя" required="">
                 <span class="no-error">Ошибка: неверный формат</span>
@@ -647,22 +647,22 @@
   <section class="pop-up pop-up--request">
     <h2>Заказать звонок</h2>
     <p>Оставьте ваши контактные данные,<br class="br-mobile"> мы свяжемся с вами в течение рабочего дня и обязательно поможем найти ответ на ваш вопрос!</p>
-    <form class="pop-up__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
+    <form class="pop-up__form form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset>
-        <input id="pop-up-name" type="text" name="name" placeholder="имя" required="">
+        <input id="pop-up-name" type="text" name="name" placeholder="имя" required="" tabindex="1">
         <span class="no-error">Ошибка: неверный формат</span>
         <label class="visually-hidden" for="pop-up-name">Имя</label>
-        <input id="pop-up-tel" type="tel" name="tel" placeholder="телефон" required="">
+        <input id="pop-up-tel" type="tel" name="tel" placeholder="телефон" required="" tabindex="1">
         <span class="no-error">Ошибка: неверный формат</span>
         <label class="visually-hidden" for="pop-up-tel">Номер телефона</label>
       </fieldset>
-      <button class="pop-up__button button" type="submit">перезвоните мне</button>
+      <button class="pop-up__button button" type="submit" tabindex="2">перезвоните мне</button>
       <div class="pop-up__agreement">
-        <input class="visually-hidden" id="agreement" type="checkbox" name="agreement" required="">
+        <input class="visually-hidden" id="agreement" type="checkbox" name="agreement" required="" tabindex="1">
         <label for="agreement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных</label>
       </div>
     </form>
-    <button class="pop-up__close-button" type="button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+    <button class="pop-up__close-button" type="button" tabindex="2"><span class="visually-hidden">Закрыть модальное окно</span></button>
   </section>
   <section class="pop-up pop-up--message">
     <h2>Заявка принята</h2>

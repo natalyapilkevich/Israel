@@ -16,6 +16,7 @@
 
 .about-program h2 {
   margin: 0 0 24px;
+  padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -29,6 +30,8 @@
 .about-program p {
   width: 690px;
   margin: 0 auto 48px;
+  padding: 0;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -40,11 +43,8 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-}
-
-.about-program__play-button svg {
-  fill: #1fc0fc;
-  transform: translate(2px, 1px);
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .about-program__play-button {
@@ -92,6 +92,11 @@
   }
 }
 
+.about-program__play-button svg {
+  fill: #1fc0fc;
+  transform: translate(2px, 1px);
+}
+
 @media (max-width: 900px) {
   .about-program__picture-wrapper img {
     width: 320px;
@@ -109,6 +114,7 @@
   .about-program {
     margin: -5px auto 0;
     padding: 0 0 69px;
+    box-sizing: border-box;
     background: url("../img/bg-about_program_map-mobile@1x.png") center no-repeat;
     background-size: 100%;
 
@@ -129,16 +135,9 @@
 
   .about-program p {
     width: 90%;
-    box-sizing: border-box;
     font-size: 16px;
     line-height: 26px;
     text-align: left;
-  }
-
-  .about-program__play-button svg {
-    width: 12.5px;
-    height: 18.53px;
-    //transform: translate(2px, 1px);
   }
 
   .about-program__play-button {
@@ -147,9 +146,13 @@
     transform: translate(-50%, -39%);
 
     &::after {
-      //transform: translate(-50%, -50%);
       width: 80px;
       height: 80px;
     }
+  }
+
+  .about-program__play-button svg {
+    width: 12.5px;
+    height: 18.53px;
   }
 }

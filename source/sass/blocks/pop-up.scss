@@ -55,6 +55,7 @@
   height: 17px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .pop-up__close-button::before,
@@ -96,6 +97,16 @@
   line-height: 19px;
   color: #484848;
   opacity: 0.74;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .pop-up__agreement label::before {
@@ -118,6 +129,10 @@
   height: 12px;
   background: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
   border-radius: 50%;
+}
+
+.pop-up__agreement input:focus + label::before {
+  outline: 3px solid  #ffd701;
 }
 
 .pop-up--message {
