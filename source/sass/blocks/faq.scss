@@ -118,7 +118,7 @@
   color: #ffc341;
 }
 
-.faq__item {
+.faq__main p {
   display: none;
   margin: 16px 0 7px;
   font-style: normal;
@@ -129,11 +129,11 @@
   opacity: 0.74;
 }
 
-.faq__item--active {
+.faq__main .item-active {
   display: block;
 }
 
-.faq--nojs .faq__item {
+.faq--nojs p {
   display: block;
 }
 
@@ -201,7 +201,7 @@
     padding-right: 25px;
   }
 
-  .faq__item {
+  .faq__main p {
     margin: 18px 0 0;
     font-size: 14px;
     line-height: 22px;

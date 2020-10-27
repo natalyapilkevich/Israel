@@ -336,7 +336,7 @@
 
   var faq = document.querySelector('.faq');
   var faqLinks = faq.querySelectorAll('.faq__link');
-  var faqItems = faq.querySelectorAll('.faq__item');
+  var faqItems = faq.querySelectorAll('.faq__main p');
 
   faq.classList.remove('faq--nojs');
 
@@ -344,7 +344,7 @@
     link.addEventListener('click', function () {
 
       link.classList.toggle('faq__link--active');
-      text.classList.toggle('faq__item--active');
+      text.classList.toggle('item-active');
     });
   };
 

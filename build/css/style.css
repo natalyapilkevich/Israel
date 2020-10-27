@@ -2275,7 +2275,7 @@ button.swiper-pagination-bullet {
   line-height: 48px;
   color: #ffc341; }
 
-.faq__item {
+.faq__main p {
   display: none;
   margin: 16px 0 7px;
   font-style: normal;
@@ -2285,10 +2285,10 @@ button.swiper-pagination-bullet {
   color: #484848;
   opacity: 0.74; }
 
-.faq__item--active {
+.faq__main .item-active {
   display: block; }
 
-.faq--nojs .faq__item {
+.faq--nojs p {
   display: block; }
 
 @media (max-width: 1023px) {
@@ -2335,7 +2335,7 @@ button.swiper-pagination-bullet {
     margin-right: 12px; }
   .faq__link span:last-child {
     padding-right: 25px; }
-  .faq__item {
+  .faq__main p {
     margin: 18px 0 0;
     font-size: 14px;
     line-height: 22px; } }
